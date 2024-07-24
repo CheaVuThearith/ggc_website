@@ -12,6 +12,10 @@ const config: Config = {
       primary: "Inter",
     },
     extend: {
+      content: {
+        "leaf-element": "url('/assets/leaf.svg')",
+      },
+
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
