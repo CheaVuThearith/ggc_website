@@ -1,34 +1,37 @@
-"use client"
-import { useState } from "react";
+"use client";
 import { AnimatePresence, LayoutGroup, motion } from "framer-motion";
+import { useState, useEffect } from "react";
+
 const pages = ["home", "blog", "about", "recycle"];
 function Navbar() {
   const [navbarOn, setnavbarOn] = useState(false);
+  const [windowWidth, setwindowWidth] = useState<null | number>(null);
+  useEffect(() => {
+    setwindowWidth(window.innerWidth);
+  }, [windowWidth]); // console.log(window.innerWidth);
   return (
-    <nav className="w-full bg-black flex justify-center items-center">
+    <>
       <LayoutGroup>
         {/* inner nav */}
-        <motion.div
+        <motion.nav
           layout
-          className="flex flex-col gap-y-5 xl:flex-row min-w-[80%] max-w-[80%] justify-center xl:justify-between items-center"
+          className="sticky bg-white top-14 flex w-full flex-col items-center justify-center gap-y-5 xl:flex-row xl:justify-between"
         >
-
-
-
+          {/* left side */}
           <div
+            className="flex cursor-pointer flex-row items-center gap-x-3"
             onClick={() => setnavbarOn((o) => !o)}
-            className="flex flex-row items-center gap-x-3 cursor-pointer"
           >
             {/* logo */}
             <motion.img
               layout="position"
               src="/assets/ggc.svg"
               alt="ggc_logo"
-              className="w-24 h-16"
+              className="h-16 w-24"
             />
             <AnimatePresence mode="popLayout">
               {/* slogan and name */}
-              {(navbarOn || window.innerWidth > 1280) && (
+              {(navbarOn || windowWidth > 1280) && (
                 <motion.div
                   initial={{ opacity: 0, x: -50 }}
                   animate={{ opacity: 1, x: 0 }}
@@ -37,9 +40,9 @@ function Navbar() {
                   className="flex-col gap-y-2 xl:flex"
                 >
                   <h1 className="font-accent text-3xl">
-                    <span className="text-ggcPrimary">Green</span> Growth Cycle
+                    <span className="text-primary">Green</span> Growth Cycle
                   </h1>
-                  <p className="text-xl font-ggcPrimary">
+                  <p className="font-primary text-xl">
                     Small Actions Leads to Big Changes
                   </p>
                 </motion.div>
@@ -48,28 +51,27 @@ function Navbar() {
           </div>
           {/* right side */}
           {/* link */}
-          {(navbarOn || window.innerWidth > 1280) && (
+          {(navbarOn || windowWidth > 1280) && (
             <motion.ul
               layout="position"
               initial={{ opacity: 0, y: -100 }}
               animate={{ opacity: 1, y: 0 }}
-              className="flex flex-col xl:flex-row xl:w-auto items-center justify-center w-full gap-x-10 "
+              className="absolute inset-x-auto w-full top-20 -z-10 flex flex-col items-start justify-start gap-x-10 bg-white xl:static xl:w-auto xl:flex-row"
             >
               {/* add hidden to ul */}
               {pages.map((page, index) => (
                 <li
                   key={index}
-                  className="font-ggcPrimary hover:bg-ggcPrimaryLight
-                   transition-all duration-200 cursor-pointer text-xl w-full xl:w-auto xl:p-auto py-5 xl:border-t border-none border-[#0000002c] text-center"
+                  className="font-primary hover:bg-primaryLight xl:p-auto w-full cursor-pointer border-none border-[#0000002c] py-5 text-center text-xl transition-all duration-200 xl:w-auto xl:border-t"
                 >
                   {page.slice(0, 1).toUpperCase() + page.slice(1)}
                 </li>
               ))}
             </motion.ul>
           )}
-        </motion.div>
+        </motion.nav>
       </LayoutGroup>
-    </nav>
+    </>
   );
 }
 

@@ -7,20 +7,20 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    colors: {
-      ggcPrimary: "#2BAE7A",
-      ggcPrimaryLight: "#DDFBF0",
-      accent: "#D2B48C",
-    },
     fontFamily: {
       accent: "Aclonica",
-      ggcPrimary: "Inter",
+      primary: "Inter",
     },
     extend: {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      },
+      colors: {
+        primary: "#2BAE7A",
+        primaryLight: "#DDFBF0",
+        accent: "#D2B48C",
       },
     },
   },
