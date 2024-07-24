@@ -7,6 +7,15 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    colors: {
+      ggcPrimary: "#2BAE7A",
+      ggcPrimaryLight: "#DDFBF0",
+      accent: "#D2B48C",
+    },
+    fontFamily: {
+      accent: "Aclonica",
+      ggcPrimary: "Inter",
+    },
     extend: {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

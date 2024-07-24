@@ -31,3 +31,20 @@ body {
     text-wrap: balance;
   }
 }
+
+@layer base {
+  @font-face {
+    font-family: "Aclonica";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(../public/fonts/Aclonica-Regular.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(../public/fonts/Inter-VariableFont_slnt,wght.ttf) format("truetype");
+  }
+}
