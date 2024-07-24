@@ -13,6 +13,8 @@ function Navbar() {
           className="flex flex-col gap-y-5 xl:flex-row min-w-[80%] max-w-[80%] justify-center xl:justify-between items-center"
         >
           {/* left side */}
+
+  
           
           <div
             onClick={() => setnavbarOn((o) => !o)}
