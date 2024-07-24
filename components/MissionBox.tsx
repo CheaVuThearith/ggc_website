@@ -14,7 +14,7 @@ const MissionBox = ({title, subtitle}:props) => {
         >
           <path
             strokeLinecap="round"
-            strokeLinejoin="round"np
+            strokeLinejoin="round"
             d="M5.5 20h13M5.5 12.5h13M5.5 4.5h13"
           />
         </svg>
