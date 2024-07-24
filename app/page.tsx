@@ -9,10 +9,10 @@ import MissionBox from '@/components/MissionBox';
 export default function Home() {
   return (
     <>
-    {/* <Navbar/> */}
-    <div className="flex flex-col items-center justify-center bg-gray-100 min-h-screen"></div>
+    
       <HeroSection />
-      <MissionBox/>
+      
+      <MissionBox title="Hello everybody my name is tai ngonheng I am the one who never write typescript before and never know what is react and never write the tailwind But Now I can define a props to the project such as title and subtitle " subtitle="This is my first"/>
     </>
   );
 }
