@@ -14,6 +14,7 @@ const config: Config = {
     extend: {
       content: {
         "leaf-element": "url('/assets/leaf.svg')",
+        "email-svg": "url('/assets/email_icon.svg')",
       },
 
       backgroundImage: {
