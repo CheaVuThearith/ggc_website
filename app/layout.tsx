@@ -16,13 +16,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="flex flex-col font-primary items-center justify-center">
+    <html
+      lang="en"
+      className="font-primary flex flex-col items-center justify-center"
+    >
       <body
-        className={`mt-14 flex w-[100%] max-w-screen-2xl px-8 flex-col gap-y-20 ${inter.className}`}
+        className={`mt-14 flex w-[100%] max-w-screen-2xl flex-col gap-y-20 px-8 ${inter.className}`}
       >
         <Navbar />
 
         {children}
+      {/* empty placeholder to make the bottom of the page more spacious*/}
+      <div className="h-96"></div>
       </body>
     </html>
   );

@@ -1,13 +1,14 @@
 import ContactCard from "@/components/ContactCard";
-import ContactSection from "@/components/ContactSection";
-import HeroSection from "@/components/HeroSection";
-import RecyclingFacilitiesSection from "@/components/RecyclingFacilitiesSection";
+import ContactSection from "@/components/HomePage/ContactSection";
+import HeroSection from "@/components/HomePage/HeroSection";
+import RecyclingFacilitiesSection from "@/components/HomePage/RecyclingFacilitiesSection";
 import Navbar from "@/components/Navbar";
 import React from "react";
-import MissionBox from "@/components/MissionBox";
-import BlogBox from "@/components/BlogBox";
-import MissionSection from "@/components/MissionSection";
-import BlogSection from "@/components/BlogSection";
+import MissionCard from "@/components/MissionCard";
+import BlogCard from "@/components/BlogCard";
+import MissionSection from "@/components/HomePage/MissionSection";
+import BlogSection from "@/components/HomePage/BlogSection";
+import PartnersSeciton from "@/components/HomePage/PartnersSeciton";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <HeroSection />
       <MissionSection />
       <RecyclingFacilitiesSection />
+      <PartnersSeciton />
       <BlogSection />
       <ContactSection />
     </>

@@ -5,18 +5,24 @@ import { useState, useEffect } from "react";
 const pages = ["home", "blog", "about", "recycle"];
 function Navbar() {
   const [navbarOn, setnavbarOn] = useState(false);
-  const [windowWidth, setwindowWidth] = useState<null | number>(null);
+  const [windowWidth, setwindowWidth] = useState<number>(0);
   useEffect(() => {
     setwindowWidth(window.innerWidth);
   }, [windowWidth]); // console.log(window.innerWidth);
   return (
-    <div className="z-20">
-      {navbarOn && <motion.div initial={{opacity:0}} animate={{opacity:100}} className="absolute inset-0 bg-white"></motion.div>}
+    <>
+      {navbarOn && (
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 100 }}
+          className="absolute inset-0 z-10 bg-white"
+        ></motion.div>
+      )}
       <LayoutGroup>
         {/* inner nav */}
         <motion.nav
           layout
-          className="sticky top-14 flex w-full flex-col items-center justify-center gap-y-5 bg-white xl:flex-row xl:justify-between"
+          className="sticky top-14 z-20 flex w-full flex-col items-center justify-center gap-y-5 bg-white xl:flex-row xl:justify-between"
         >
           {/* left side */}
           <div
@@ -63,7 +69,7 @@ function Navbar() {
               {pages.map((page, index) => (
                 <li
                   key={index}
-                  className="font-primary hover:bg-primaryLight xl:p-auto w-full cursor-pointer border-none border-[#0000002c] py-5 text-center text-xl transition-all duration-200 xl:w-auto xl:border-t"
+                  className="font-primary xl:p-auto w-full cursor-pointer border-none border-[#0000002c] py-5 text-center text-xl transition-all duration-200 xl:w-auto xl:border-t"
                 >
                   {page.slice(0, 1).toUpperCase() + page.slice(1)}
                 </li>
@@ -72,7 +78,7 @@ function Navbar() {
           )}
         </motion.nav>
       </LayoutGroup>
-    </div>
+    </>
   );
 }
 

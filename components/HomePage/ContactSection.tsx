@@ -1,6 +1,6 @@
 import React from "react";
-import Section from "./Section";
-import ContactCard from "./ContactCard";
+import Section from "../Section";
+import ContactCard from "../ContactCard";
 
 type Props = {};
 
