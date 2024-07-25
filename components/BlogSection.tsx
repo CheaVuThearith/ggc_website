@@ -5,7 +5,7 @@ type Props = {}
 
 const BlogSection = (props: Props) => {
   return (
-    <Section title='Our Blog' >
+    <Section title='Our Blogs' >
       <BlogBox title='empty space for text' subtitle='Freetext'/>
 
       </Section>

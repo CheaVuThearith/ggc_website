@@ -7,7 +7,7 @@ type Props = {}
 const RecyclingFacilitiesSection = (props: Props) => {
   return (
     <Section title='Recycling Facilities'>
-        <div className='flex'>
+        <div className='flex xl:flex-row justify-center items-center flex-col'>
             <RecyclingCard title='ECO-BUSINESS_CAMBODIA' subtitle='Geography Integration Recycle' image='/assets/toadbag.png'/>
             <RecyclingCard title='ECO-BUSINESS_CAMBODIA' subtitle='Geography Integration Recycle' image='/assets/toadbag.png'/>
             <RecyclingCard title='ECO-BUSINESS_CAMBODIA' subtitle='Geography Integration Recycle' image='/assets/toadbag.png'/>

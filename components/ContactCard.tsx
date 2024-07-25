@@ -5,7 +5,7 @@ type Props = {};
 
 const ContactCard = (props: Props) => {
   return (
-    <div className="border-primaryLight flex flex-row justify-between gap-x-12 p-20 items-center h-full w-full rounded-lg border-[56px]">
+    <div className="border-primaryLight flex flex-row justify-between gap-x-12 p-20 items-center max-h-fit max-w-fit rounded-lg border-[56px]">
       <Image
         src="/assets/ggc_full.svg"
         width={350}
@@ -13,7 +13,7 @@ const ContactCard = (props: Props) => {
         alt="ggcfullimage"
       ></Image>
       {/* right side */}
-      <div className="flex flex-col gap-y-3">
+      <div className="flex flex-col max-w-[36rem] gap-y-3">
         {/* text */}
         <h2 className="font-accent text-center text-2xl font-bold">
           Green Growth Cycle

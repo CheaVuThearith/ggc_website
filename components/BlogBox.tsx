@@ -16,7 +16,7 @@ const BlogBox= ({title, subtitle}:props) => {
           {subtitle}
         </p>
         <div className="flex justify-center mt-4">
-          <button className="bg-green-500 text-white px-4 py-2 rounded-full">
+          <button className="bg-primary text-white px-4 py-2 rounded-md">
             READ MORE
           </button>
         </div>
