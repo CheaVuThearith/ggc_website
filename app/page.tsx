@@ -6,6 +6,8 @@ import Navbar from "@/components/Navbar";
 import React from 'react';
 import MissionBox from '@/components/MissionBox';
 import BlogBox from '@/components/BlogBox';
+import MissionSection from "@/components/MissionSection";
+import BlogSection from "@/components/BlogSection";
 
 
 
@@ -14,10 +16,10 @@ export default function Home() {
   return (
     <>
       <HeroSection />
+      <MissionSection/>
       <RecyclingFacilitiesSection/>
+      <BlogSection/>
       <ContactSection/>    
-      <MissionBox title="Hello  " subtitle="This is my first"/>
-      <BlogBox title="BlogBox" subtitle="Freetext" />
     </>
   );
 }
