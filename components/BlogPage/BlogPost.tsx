@@ -1,11 +1,11 @@
 import React from 'react';
-type props ={ title: string, subtitle: string, describtion: string}
-const BlogPost= ({title, subtitle,describtion}:props) => {
+type props ={ title: string, subtitle: string, describtion: string, image: string}
+const BlogPost= ({title, subtitle,describtion,image}:props) => {
   return (
-    <div className="max-w-md mx-auto bg-white rounded-lg overflow-hidden shadow-md">
+    <div className=" max-w-xl mx-auto bg-white rounded-lg overflow-hidden shadow-md">
       <img
-        className="w-full h-48 object-cover"
-        src="https://via.placeholder.com/300" // Replace with your image URL
+        className="w-[430px] h-[230px] object-cover"
+        src={image}
         alt="Blog Post"
       />
       <div className="p-4">
