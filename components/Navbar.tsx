@@ -10,12 +10,13 @@ function Navbar() {
     setwindowWidth(window.innerWidth);
   }, [windowWidth]); // console.log(window.innerWidth);
   return (
-    <>
+    <div className="z-20">
+      {navbarOn && <motion.div initial={{opacity:0}} animate={{opacity:100}} className="absolute inset-0 bg-white"></motion.div>}
       <LayoutGroup>
         {/* inner nav */}
         <motion.nav
           layout
-          className="sticky bg-white top-14 flex w-full flex-col items-center justify-center gap-y-5 xl:flex-row xl:justify-between"
+          className="sticky top-14 flex w-full flex-col items-center justify-center gap-y-5 bg-white xl:flex-row xl:justify-between"
         >
           {/* left side */}
           <div
@@ -56,7 +57,7 @@ function Navbar() {
               layout="position"
               initial={{ opacity: 0, y: -100 }}
               animate={{ opacity: 1, y: 0 }}
-              className="absolute inset-x-auto w-full top-20 -z-10 flex flex-col items-start justify-start gap-x-10 bg-white xl:static xl:w-auto xl:flex-row"
+              className="absolute top-20 -z-10 flex flex-col items-start justify-start gap-x-10 bg-white xl:static xl:w-auto xl:flex-row"
             >
               {/* add hidden to ul */}
               {pages.map((page, index) => (
@@ -71,7 +72,7 @@ function Navbar() {
           )}
         </motion.nav>
       </LayoutGroup>
-    </>
+    </div>
   );
 }
 
