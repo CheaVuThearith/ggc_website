@@ -13,7 +13,7 @@ const RecyclingCard = ({ image, title, subtitle }: Props) => {
       <Image src={image} width={400}  height={400} alt={image} />
       {/* text */}
       <div className="flex flex-col gap-y-1">
-        <h2 className="text-primary text-center text-2xl">{title}</h2>
+        <h2 className="text-primary font-bold text-center text-2xl">{title}</h2>
         <p className="text-center">{subtitle}</p>
       </div>
       {/* button */}

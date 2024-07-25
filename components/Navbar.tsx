@@ -9,6 +9,7 @@ function Navbar() {
   useEffect(() => {
     setwindowWidth(window.innerWidth);
   }, [windowWidth]); // console.log(window.innerWidth);
+  // TODO: figure out the background color of navbar
   return (
     <>
       {navbarOn && (

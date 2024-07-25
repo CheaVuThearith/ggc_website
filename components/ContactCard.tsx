@@ -4,6 +4,7 @@ import React from "react";
 type Props = {};
 
 const ContactCard = (props: Props) => {
+  // TODO: make responsive
   return (
     <div className="border-primaryLight flex max-h-fit max-w-fit flex-row items-center justify-between gap-x-12 rounded-lg border-[56px] p-20">
       <Image
