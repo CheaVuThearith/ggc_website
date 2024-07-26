@@ -1,5 +1,5 @@
 import React from "react";
-import Section from "../Section";
+import Section from "../../Section";
 import PartnersCard from "../PartnersCard";
 
 type Props = {};
@@ -7,9 +7,9 @@ type Props = {};
 const PartnersSeciton = (props: Props) => {
   return (
     <Section title="Our Partners">
-        <div className="flex flex-wrap justify-center items-center">
-      <PartnersCard name="Glean Asia" image="/assets/partners/glean.svg" />
-        </div>
+      <div className="flex flex-wrap items-center justify-center">
+        <PartnersCard name="Glean Asia" image="/assets/partners/glean.svg" />
+      </div>
     </Section>
   );
 };

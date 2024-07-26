@@ -1,5 +1,5 @@
 import React from "react";
-import Section from "../Section";
+import Section from "../../Section";
 import BlogCard from "../BlogCard";
 type Props = {};
 
@@ -27,7 +27,7 @@ const blogs = [
 const BlogSection = (props: Props) => {
   return (
     <Section title="Our Blogs">
-      <div className="flex flex-col gap-y-12 gap-x-8 items-center xl:items-stretch justify-center xl:flex-row">
+      <div className="flex flex-col items-center justify-center gap-x-8 gap-y-12 xl:flex-row xl:items-stretch">
         {blogs.map((blog, index) => (
           <BlogCard
             key={index}

@@ -1,5 +1,5 @@
 import React from "react";
-import Section from "../Section";
+import Section from "../../Section";
 import RecyclingCard from "../RecyclingCard";
 
 type Props = {};
@@ -25,7 +25,7 @@ const showcase = [
 const RecyclingFacilitiesSection = (props: Props) => {
   return (
     <Section title="Recycling Facilities">
-      <div className="flex flex-col gap-y-12 gap-x-8 items-center xl:items-stretch justify-center xl:flex-row">
+      <div className="flex flex-col items-center justify-center gap-x-8 gap-y-12 xl:flex-row xl:items-stretch">
         {showcase.map((item, index) => (
           <RecyclingCard
             key={index}
