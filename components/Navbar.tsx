@@ -16,14 +16,14 @@ function Navbar() {
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 100 }}
-          className="absolute inset-0 z-10 bg-white"
+          className="fixed inset-0 z-10 bg-white"
         ></motion.div>
       )}
       <LayoutGroup>
         {/* inner nav */}
         <motion.nav
           layout
-          className="sticky top-0 z-20  flex w-full flex-col items-center justify-center gap-y-5 bg-white py-2 xl:flex-row xl:justify-between"
+          className="sticky top-0 z-20 flex w-full flex-col items-center justify-center gap-y-5 bg-white py-2 xl:flex-row xl:justify-between"
         >
           {/* left side */}
           <div
@@ -64,13 +64,13 @@ function Navbar() {
               layout="position"
               initial={{ opacity: 0, y: -100 }}
               animate={{ opacity: 1, y: 0 }}
-              className="absolute top-20 -z-10 flex flex-col items-start justify-start gap-x-10 bg-white xl:static xl:w-auto xl:flex-row"
+              className="absolute top-20 -z-10 flex w-full flex-col items-center justify-start gap-x-10 bg-white xl:static xl:w-auto xl:flex-row"
             >
               {/* add hidden to ul */}
               {pages.map((page, index) => (
-                <li key={index}>
+                <li key={index} className="flex w-full items-center">
                   <a
-                    className="font-primary xl:p-auto w-full cursor-pointer border-none border-[#0000002c] py-5 text-center text-xl transition-all duration-200 xl:w-auto xl:border-t"
+                    className="font-primary xl:p-auto w-full cursor-pointer border-none border-[#0000002c] p-5 text-center text-xl transition-all duration-200 xl:w-auto xl:border-t"
                     href={`/${page}`}
                   >
                     {page.slice(0, 1).toUpperCase() + page.slice(1)}
