@@ -1,23 +1,22 @@
-import React from 'react';
-type props ={ title: string, subtitle: string, describtion: string, image: string}
-const BlogPost= ({title, subtitle,describtion,image}:props) => {
+import React from "react";
+type props = {
+  title: string;
+  subtitle: string;
+  describtion: string;
+  image: string;
+};
+const BlogPost = ({ title, subtitle, describtion, image }: props) => {
   return (
-    <div className=" max-w-xl mx-auto bg-white rounded-lg overflow-hidden shadow-md">
+    <div className="mx-auto max-w-xl overflow-hidden rounded-lg bg-white shadow-md">
       <img
-        className="w-[430px] h-[230px] object-cover"
+        className="h-[230px] w-[430px] object-cover"
         src={image}
         alt="Blog Post"
       />
       <div className="p-4">
-        <div className="text-sm text-purple-700 font-semibold">
-          {describtion}
-        </div>
-        <h2 className="mt-2 text-xl font-bold text-gray-900">
-          {title}
-        </h2>
-        <p className="mt-2 text-gray-600">
-          {subtitle}
-        </p>
+        <div className="text-primary text-sm font-semibold">{describtion}</div>
+        <h2 className="mt-2 text-xl font-bold text-gray-900">{title}</h2>
+        <p className="mt-2 text-gray-600">{subtitle}</p>
       </div>
     </div>
   );

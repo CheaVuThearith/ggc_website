@@ -15,6 +15,7 @@ const config: Config = {
       content: {
         "leaf-element": "url('/assets/icons/leaf.svg')",
         "email-svg": "url('/assets/icons/email_icon.svg')",
+        "search-icon": "url('/assets/icons/search.png')",
       },
 
       backgroundImage: {
