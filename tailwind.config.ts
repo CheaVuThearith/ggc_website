@@ -13,8 +13,8 @@ const config: Config = {
     },
     extend: {
       content: {
-        "leaf-element": "url('/assets/leaf.svg')",
-        "email-svg": "url('/assets/email_icon.svg')",
+        "leaf-element": "url('/assets/icons/leaf.svg')",
+        "email-svg": "url('/assets/icons/email_icon.svg')",
       },
 
       backgroundImage: {

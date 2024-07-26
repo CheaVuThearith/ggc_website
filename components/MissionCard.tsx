@@ -1,5 +1,6 @@
+import Image from "next/image";
 import React, { ReactNode } from "react";
-type props = { title: string; subtitle: string; icon: ReactNode };
+type props = { title: string; subtitle: string; icon: string };
 const MissionCard = ({ title, subtitle, icon }: props) => {
   return (
     <div className="flex max-w-fit flex-col items-center justify-between rounded-lg bg-white p-6">
@@ -9,7 +10,7 @@ const MissionCard = ({ title, subtitle, icon }: props) => {
           className="flex size-28 items-center justify-center rounded-full bg-white"
           style={{ boxShadow: "0px 1px 7px -3px #20B07C" }}
         >
-          {icon}
+          <Image src={icon} height={80} width={80} alt={icon}></Image>
         </div>
         {/* title */}
         <h2 className="text-primary max-w-64 overflow-hidden text-ellipsis text-center text-xl font-semibold">

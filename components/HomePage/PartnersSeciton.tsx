@@ -8,7 +8,7 @@ const PartnersSeciton = (props: Props) => {
   return (
     <Section title="Our Partners">
         <div className="flex flex-wrap justify-center items-center">
-      <PartnersCard name="Glean Asia" image="/assets/glean.svg" />
+      <PartnersCard name="Glean Asia" image="/assets/partners/glean.svg" />
         </div>
     </Section>
   );

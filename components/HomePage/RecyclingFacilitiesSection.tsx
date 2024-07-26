@@ -8,17 +8,17 @@ const showcase = [
   {
     title: "ECO BUSINESS CAMBODIA",
     subtitle: "Business Recycle",
-    image: "/assets/ecb.png",
+    image: "/assets/facilities images/ecb.png",
   },
   {
     title: "VIRAK RECYCLE",
     subtitle: "Geography Integration Recycle",
-    image: "/assets/virak recycle.png",
+    image: "/assets/facilities images/virak recycle.png",
   },
   {
     title: "The Altruistic Traveller",
     subtitle: "Trash to treasure",
-    image: "/assets/altruistic traveller.png",
+    image: "/assets/facilities images/altruistic traveller.png",
   },
 ];
 

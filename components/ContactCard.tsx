@@ -8,7 +8,7 @@ const ContactCard = (props: Props) => {
   return (
     <div className="border-primaryLight flex max-h-fit max-w-fit gap-y-12 xl:flex-row flex-col items-center justify-between gap-x-12 rounded-lg border-0 xl:border-[56px] p-20">
       <Image
-        src="/assets/ggc_full.svg"
+        src="/assets/icons/ggc_full.svg"
         width={350}
         height={350}
         alt="ggcfullimage"

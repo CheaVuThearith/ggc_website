@@ -23,7 +23,7 @@ function Navbar() {
         {/* inner nav */}
         <motion.nav
           layout
-          className="sticky top-0 py-2 z-20 flex w-full flex-col items-center justify-center gap-y-5 bg-white xl:flex-row xl:justify-between"
+          className="sticky top-0 z-20  flex w-full flex-col items-center justify-center gap-y-5 bg-white py-2 xl:flex-row xl:justify-between"
         >
           {/* left side */}
           <div
@@ -33,7 +33,7 @@ function Navbar() {
             {/* logo */}
             <motion.img
               layout="position"
-              src="/assets/ggc.svg"
+              src="/assets/icons/ggc.svg"
               alt="ggc_logo"
               className="h-16 w-24"
             />
@@ -68,11 +68,13 @@ function Navbar() {
             >
               {/* add hidden to ul */}
               {pages.map((page, index) => (
-                <li
-                  key={index}
-                  className="font-primary xl:p-auto w-full cursor-pointer border-none border-[#0000002c] py-5 text-center text-xl transition-all duration-200 xl:w-auto xl:border-t"
-                >
-                  {page.slice(0, 1).toUpperCase() + page.slice(1)}
+                <li key={index}>
+                  <a
+                    className="font-primary xl:p-auto w-full cursor-pointer border-none border-[#0000002c] py-5 text-center text-xl transition-all duration-200 xl:w-auto xl:border-t"
+                    href={`/${page}`}
+                  >
+                    {page.slice(0, 1).toUpperCase() + page.slice(1)}
+                  </a>
                 </li>
               ))}
             </motion.ul>
