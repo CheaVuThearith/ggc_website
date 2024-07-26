@@ -1,7 +1,12 @@
 import Image from "next/image";
 import React, { ReactNode } from "react";
-type props = { title: string; subtitle: string; icon: string };
-const MissionCard = ({ title, subtitle, icon }: props) => {
+type props = {
+  title: string;
+  subtitle: string;
+  icon: string;
+  imgClass?: string;
+};
+const MissionCard = ({ title, subtitle, icon, imgClass }: props) => {
   return (
     <div className="flex max-w-fit flex-col items-center justify-between rounded-lg bg-white p-6">
       <div className="flex flex-col items-center justify-center gap-y-3">
@@ -10,7 +15,11 @@ const MissionCard = ({ title, subtitle, icon }: props) => {
           className="flex size-28 items-center justify-center rounded-full bg-white"
           style={{ boxShadow: "0px 1px 7px -3px #20B07C" }}
         >
-          <Image src={icon} height={80} width={80} alt={icon}></Image>
+          <img
+            src={icon}
+            alt={icon}
+            className={`object-contain ${imgClass}`}
+          />
         </div>
         {/* title */}
         <h2 className="text-primary max-w-64 overflow-hidden text-ellipsis text-center text-xl font-semibold">
