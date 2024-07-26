@@ -11,8 +11,8 @@ const BlogCard = ({ title, subtitle, image }: props) => {
         height={200}
         alt={image}
       ></Image>
-      <div className="flex flex-col h-full gap-y-6 justify-between">
-        <h2 className="text-center text-xl max-h-7 text-ellipsis overflow-hidden whitespace-nowrap font-semibold text-gray-800">
+      <div className="flex h-full flex-col justify-between gap-y-6">
+        <h2 className="max-h-7 overflow-hidden text-ellipsis whitespace-nowrap text-center text-xl font-semibold text-gray-800">
           {title}
         </h2>
         <p className="mt-2 text-center text-gray-600">{subtitle}</p>

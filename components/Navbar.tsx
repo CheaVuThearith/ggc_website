@@ -23,7 +23,7 @@ function Navbar() {
         {/* inner nav */}
         <motion.nav
           layout
-          className="sticky top-14 z-20 flex w-full flex-col items-center justify-center gap-y-5 bg-white xl:flex-row xl:justify-between"
+          className="sticky top-0 py-2 z-20 flex w-full flex-col items-center justify-center gap-y-5 bg-white xl:flex-row xl:justify-between"
         >
           {/* left side */}
           <div
@@ -51,7 +51,7 @@ function Navbar() {
                     <span className="text-primary">Green</span> Growth Cycle
                   </h1>
                   <p className="font-primary text-xl">
-                    Small Actions Leads to Big Changes
+                    Small Actions Can Lead to Big Changes
                   </p>
                 </motion.div>
               )}

@@ -27,7 +27,7 @@ const blogs = [
 const BlogSection = (props: Props) => {
   return (
     <Section title="Our Blogs">
-      <div className="flex flex-col gap-y-12 gap-x-8 items-stretch justify-center xl:flex-row">
+      <div className="flex flex-col gap-y-12 gap-x-8 items-center xl:items-stretch justify-center xl:flex-row">
         {blogs.map((blog, index) => (
           <BlogCard
             key={index}

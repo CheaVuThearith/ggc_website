@@ -13,7 +13,7 @@ const HeroSection = (props: Props) => {
           <h1 className="text-primary font-accent after:content-leaf-element relative text-7xl after:absolute after:bottom-0 after:-ml-2 after:mb-1">
             Welcome to GGC
           </h1>
-          <h2 className="text-4xl flex flex-col gap-y-3">
+          <h2 className="flex flex-col gap-y-3 text-4xl">
             Your Journey to a{" "}
             <span className="text-primary text-5xl font-bold">
               Sustainable Lifestyle{" "}
@@ -23,7 +23,7 @@ const HeroSection = (props: Props) => {
         </div>
         {/* call to action */}
         <div className="flex flex-col gap-y-4">
-          <p>
+          <p className="text-gray-700">
             Browse our blog to learn more about the environment or take a look
             at some recycling facilities and start taking action!
           </p>

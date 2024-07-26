@@ -25,7 +25,7 @@ const showcase = [
 const RecyclingFacilitiesSection = (props: Props) => {
   return (
     <Section title="Recycling Facilities">
-      <div className="flex flex-col gap-y-12 gap-x-8 items-stretch justify-center xl:flex-row">
+      <div className="flex flex-col gap-y-12 gap-x-8 items-center xl:items-stretch justify-center xl:flex-row">
         {showcase.map((item, index) => (
           <RecyclingCard
             key={index}

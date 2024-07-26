@@ -21,7 +21,7 @@ export default function RootLayout({
       className="font-primary flex flex-col items-center justify-center"
     >
       <body
-        className={`mt-14 flex w-[100%] max-w-screen-2xl flex-col gap-y-20 px-8 ${inter.className}`}
+        className={`mt-14 overflow-x-hidden flex w-[100%] max-w-screen-2xl flex-col gap-y-20 px-8 ${inter.className}`}
       >
         <Navbar />
 
