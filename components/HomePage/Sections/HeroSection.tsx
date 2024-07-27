@@ -27,9 +27,9 @@ const HeroSection = (props: Props) => {
             Browse our blog to learn more about the environment or take a look
             at some recycling facilities and start taking action!
           </p>
-          <button className="bg-primary max-w-fit rounded-md px-12 py-3 font-bold text-white">
+          <a href="/blog" className="bg-primary max-w-fit rounded-md px-12 py-3 font-bold text-white">
             Learn More
-          </button>
+          </a>
         </div>
       </div>
       {/* right side */}

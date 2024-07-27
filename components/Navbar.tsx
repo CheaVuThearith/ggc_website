@@ -1,5 +1,6 @@
 "use client";
 import { AnimatePresence, LayoutGroup, motion } from "framer-motion";
+import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
 
 const pages = ["home", "blog", "about", "recycle"];
@@ -8,8 +9,8 @@ function Navbar() {
   const [windowWidth, setwindowWidth] = useState<number>(0);
   useEffect(() => {
     setwindowWidth(window.innerWidth);
-  }, [windowWidth]); // console.log(window.innerWidth);
-  // TODO: figure out the background color of navbar
+  }, [windowWidth]);
+  const pathname = usePathname();
   return (
     <>
       {navbarOn && (
@@ -70,7 +71,7 @@ function Navbar() {
               {pages.map((page, index) => (
                 <li key={index} className="flex w-full items-center">
                   <a
-                    className="font-primary xl:p-auto w-full cursor-pointer border-none border-[#0000002c] p-5 text-center text-xl transition-all duration-200 xl:w-auto xl:border-t"
+                    className={`${(pathname == `/${page}` || (pathname == "/" && page == "home")) && "text-primary"} font-primary xl:p-auto w-full cursor-pointer border-none border-[#0000002c] p-5 text-center text-xl transition-all duration-200 xl:w-auto xl:border-t`}
                     href={`/${page}`}
                   >
                     {page.slice(0, 1).toUpperCase() + page.slice(1)}
