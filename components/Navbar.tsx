@@ -7,7 +7,7 @@ import { useState, useEffect } from "react";
 const pages = ["home", "blog", "about", "recycle"];
 function Navbar() {
   const [navbarOn, setnavbarOn] = useState(false);
-  const [windowWidth, setwindowWidth] = useState<number>(0);
+  const [windowWidth, setwindowWidth] = useState<number>(2144);
   useEffect(() => {
     setwindowWidth(window.innerWidth);
   }, [windowWidth]);
@@ -61,7 +61,7 @@ function Navbar() {
             </div>
 
             {/* hamburger */}
-            {windowWidth <= 1280 && (
+            {(windowWidth <= 1280) && (
               <Bars3Icon
                 className="size-8 cursor-pointer"
                 onClick={() => setnavbarOn((o) => !o)}
