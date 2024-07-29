@@ -7,7 +7,7 @@ type Props = {};
 const BlogPage = (props: Props) => {
   return (
     <>
-      <section className="flex flex-col gap-y-12">
+      <section className="flex flex-col -mt-10 gap-y-12">
         <GreenPost title="" subtitle="" image="" />
         {/* bottom section */}
         <div className="flex flex-col-reverse xl:flex-row justify-between gap-16">
