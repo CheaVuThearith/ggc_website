@@ -7,9 +7,9 @@ type props = {
 };
 const BlogPost = ({ title, subtitle, description, image }: props) => {
   return (
-    <div className="grow overflow-hidden rounded-lg bg-white shadow-md">
+    <div className="max-w-[488px] grow overflow-hidden rounded-lg bg-white shadow-md">
       <img
-        className="aspect-auto min-h-[230px] w-full min-w-[430px] max-w-[488px] object-cover"
+        className="aspect-auto min-h-[230px] w-full min-w-[430px] object-cover"
         src={image}
         alt="Blog Post"
       />
