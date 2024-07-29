@@ -4,7 +4,7 @@ import { AnimatePresence, LayoutGroup, motion } from "framer-motion";
 import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
 
-const pages = ["home", "blog", "about", "recycle"];
+const pages = ["home", "blog", "recycle", "about"];
 function Navbar() {
   const [navbarOn, setnavbarOn] = useState(false);
   const [windowWidth, setwindowWidth] = useState<number>(2144);
@@ -61,7 +61,7 @@ function Navbar() {
             </div>
 
             {/* hamburger */}
-            {(windowWidth <= 1280) && (
+            {windowWidth <= 1280 && (
               <Bars3Icon
                 className="size-8 cursor-pointer"
                 onClick={() => setnavbarOn((o) => !o)}

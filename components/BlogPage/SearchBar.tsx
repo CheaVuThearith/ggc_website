@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 
 type Props = {};
-const searchOptions = ["Recent Posts", "Reuse", "Reduce", "Recycle"] as const;
+const searchOptions = ["Recent", "Reuse", "Reduce", "Recycle"] as const;
 const SearchBar = (props: Props) => {
   const [selected, setselected] =
     useState<(typeof searchOptions)[number]>("Recent Posts");

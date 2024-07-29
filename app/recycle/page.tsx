@@ -5,7 +5,7 @@ import SearchBar from "@/components/BlogPage/SearchBar";
 
 type Props = {};
 // make responsive
-const BlogPage = (props: Props) => {
+const RecyclePage = (props: Props) => {
   return (
     <>
       <section className="flex flex-col -mt-10 gap-y-12">
@@ -60,4 +60,4 @@ const BlogPage = (props: Props) => {
   );
 };
 
-export default BlogPage;
+export default RecyclePage;
