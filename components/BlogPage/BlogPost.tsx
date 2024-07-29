@@ -1,4 +1,5 @@
 import React from "react";
+
 type props = {
   title: string;
   subtitle: string;
@@ -23,3 +24,4 @@ const BlogPost = ({ title, subtitle, description, image }: props) => {
 };
 
 export default BlogPost;
+

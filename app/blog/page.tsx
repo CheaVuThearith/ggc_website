@@ -10,7 +10,7 @@ const BlogPage = (props: Props) => {
       <section className="flex flex-col gap-y-12">
         <GreenPost title="" subtitle="" image="" />
         {/* bottom section */}
-        <div className="flex flex-row justify-between gap-x-16">
+        <div className="flex flex-col-reverse xl:flex-row justify-between gap-16">
           {/* blog posts */}
           <div className="flex max-w-5xl shrink-0 grow flex-row flex-wrap items-center justify-center gap-12">
             <BlogPost

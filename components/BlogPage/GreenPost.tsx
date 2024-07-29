@@ -6,7 +6,7 @@ const searchOptions = ["Recent Posts", "Reuse", "Reduce", "Recycle"];
 
 const GreenPost = ({ image, title, subtitle }: Props) => {
   return (
-    <div className="bg-primary p-12">
+    <div className="bg-primary xl:block hidden p-12">
       {/* card */}
       <div className="flex flex-row gap-x-6">
         {/* image */}
