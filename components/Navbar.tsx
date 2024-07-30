@@ -1,4 +1,5 @@
 "use client";
+import { Bars3Icon } from "@heroicons/react/16/solid";
 import { AnimatePresence, LayoutGroup, motion } from "framer-motion";
 import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
@@ -6,7 +7,7 @@ import { useState, useEffect } from "react";
 const pages = ["home", "blog", "about", "recycle"];
 function Navbar() {
   const [navbarOn, setnavbarOn] = useState(false);
-  const [windowWidth, setwindowWidth] = useState<number>(0);
+  const [windowWidth, setwindowWidth] = useState<number>(2144);
   useEffect(() => {
     setwindowWidth(window.innerWidth);
   }, [windowWidth]);
@@ -27,20 +28,19 @@ function Navbar() {
           className="sticky top-0 z-20 flex w-full flex-col items-center justify-center gap-y-5 bg-white py-2 xl:flex-row xl:justify-between"
         >
           {/* left side */}
-          <div
-            className="flex cursor-pointer flex-row items-center gap-x-3"
-            onClick={() => setnavbarOn((o) => !o)}
-          >
-            {/* logo */}
-            <motion.img
-              layout="position"
-              src="/assets/icons/ggc.svg"
-              alt="ggc_logo"
-              className="h-16 w-24"
-            />
-            <AnimatePresence mode="popLayout">
-              {/* slogan and name */}
-              {(navbarOn || windowWidth > 1280) && (
+          <div className="flex w-full items-center justify-between gap-x-3 xl:w-auto xl:justify-normal">
+            <div className="flex w-full flex-row items-center gap-x-3 xl:w-auto">
+              {/* logo */}
+              <a href="/">
+                <motion.img
+                  layout="position"
+                  src="/assets/icons/ggc.svg"
+                  alt="ggc_logo"
+                  className="h-16 w-24"
+                />
+              </a>
+              <AnimatePresence mode="popLayout">
+                {/* slogan and name */}
                 <motion.div
                   initial={{ opacity: 0, x: -50 }}
                   animate={{ opacity: 1, x: 0 }}
@@ -51,12 +51,22 @@ function Navbar() {
                   <h1 className="font-accent text-3xl">
                     <span className="text-primary">Green</span> Growth Cycle
                   </h1>
-                  <p className="font-primary text-xl">
-                    Small Actions Can Lead to Big Changes
-                  </p>
+                  {windowWidth > 1280 && (
+                    <p className="font-primary text-xl">
+                      Small Actions Can Lead to Big Changes
+                    </p>
+                  )}
                 </motion.div>
-              )}
-            </AnimatePresence>
+              </AnimatePresence>
+            </div>
+
+            {/* hamburger */}
+            {windowWidth <= 1280 && (
+              <Bars3Icon
+                className="size-8 cursor-pointer"
+                onClick={() => setnavbarOn((o) => !o)}
+              />
+            )}
           </div>
           {/* right side */}
           {/* link */}
