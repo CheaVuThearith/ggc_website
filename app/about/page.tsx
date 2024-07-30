@@ -15,7 +15,7 @@ const page = (props: Props) => {
       <Section title='What We Do'>
         <p>We are advancing the 3Rs—Reuse, Reduce, Recycle—in Phnom Penh through targeted education and community initiatives to foster eco-friendly practices and enhance waste management. Furthermore, we support local recycling manufacturers to streamline recycling processes and make it more accessible for residents.</p>
       </Section>
-    <Image src='/assets/recycleBanner.png' width={1500} height={480}/>
+    <Image src='/assets/recycleBanner.png' width={1500} height={480} alt={''}/>
 
     </>
   )
