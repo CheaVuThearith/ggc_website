@@ -2,6 +2,7 @@ import BlogPost from "@/components/BlogPage/BlogPost";
 import GreenPost from "@/components/BlogPage/GreenPost";
 import Pagination from "@/components/BlogPage/Pagination";
 import SearchBar from "@/components/BlogPage/SearchBar";
+import Footer from "@/components/Footer";
 
 type Props = {};
 // make responsive
@@ -55,6 +56,7 @@ const BlogPage = (props: Props) => {
         </div>
       </section>
       <Pagination/>
+      <Footer/>
 
     </>
   );

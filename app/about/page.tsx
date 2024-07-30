@@ -2,6 +2,7 @@ import React from "react";
 import Section from "@/components/Section";
 import MissionSection from "@/components/HomePage/Sections/MissionSection";
 import Image from "next/image";
+import Footer from "@/components/Footer";
 
 type Props = {};
 
@@ -33,6 +34,7 @@ const page = (props: Props) => {
         height={480}
         alt="/assets/recycleBanner.png"
       />
+      <Footer/>
     </>
   );
 };

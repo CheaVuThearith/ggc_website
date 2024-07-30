@@ -3,6 +3,7 @@ import ContactSection from "@/components/HomePage/Sections/ContactSection";
 import HeroSection from "@/components/HomePage/Sections/HeroSection";
 import MissionSection from "@/components/HomePage/Sections/MissionSection";
 import PartnersSeciton from "@/components/HomePage/Sections/PartnersSeciton";
+import Footer from "@/components/Footer";
 import RecyclingFacilitiesSection from "@/components/HomePage/Sections/RecyclingFacilitiesSection";
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       <PartnersSeciton />
       <BlogSection />
       <ContactSection />
+      <Footer/>
     </>
   );
 }
