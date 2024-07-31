@@ -1,6 +1,31 @@
 import { connectToDatabase } from "@/lib/mongodb";
 import RecyclingFacilityModel from "@/models/RecyclingFacilities";
 import { NextResponse } from "next/server";
+//valid search params are name, location, typesOfWaste(array separated by ','), page, limit
+export async function POST(request: Request) {
+  try {
+    await connectToDatabase();
+    const body = await request.json();
+
+    for (let index = 0; index < body.length; index++) {
+      const element = body[index];
+      if (element.startHour) {
+        element.startHour = new Date(element.startHour);
+      }
+      if (element.endHour) {
+        element.endHour = new Date(element.endHour);
+      }
+    }
+    const data = await RecyclingFacilityModel.insertMany(body);
+
+    return NextResponse.json(
+      { message: "entry added", data: data },
+      { status: 201 }
+    );
+  } catch (error) {
+    return NextResponse.json({ error: error.message }, { status: 500 });
+  }
+}
 
 export async function GET(request: Request) {
   try {
@@ -18,9 +43,10 @@ export async function GET(request: Request) {
     const filter: any = {};
     if (name) filter.name = { $regex: name, $options: "i" };
     if (location) filter.location = { $regex: location, $options: "i" };
-    if (typesOfWaste)
-      filter.typesOfWaste = { $regex: typesOfWaste, $options: "i" };
-
+    if (typesOfWaste) {
+      const typesArray = typesOfWaste.split(","); // Assuming typesOfWaste is a comma-separated string
+      filter.typesOfWaste = { $in: typesArray };
+    }
     const skip = (page - 1) * limit;
 
     const facilities = await RecyclingFacilityModel.find(filter)
@@ -40,7 +66,7 @@ export async function GET(request: Request) {
     });
   } catch (error) {
     return NextResponse.json(
-      { error: "Failed to fetch recycling facilities" },
+      { error: error.message },
       { status: 500 }
     );
   }

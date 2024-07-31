@@ -2,6 +2,21 @@ import { connectToDatabase } from "@/lib/mongodb";
 import BlogPostModel from "@/models/BlogPosts";
 import { NextResponse } from "next/server";
 
+export async function POST(request: Request) {
+  try {
+    await connectToDatabase();
+    const body = await request.json();
+
+    const data = await BlogPostModel.insertMany(body);
+
+    return NextResponse.json(
+      { message: "entry added", data: data },
+      { status: 201 }
+    );
+  } catch (error) {
+    return NextResponse.json({ error: error.message }, { status: 500 });
+  }
+}
 export async function GET(requests: Request) {
   try {
     await connectToDatabase();
@@ -16,7 +31,11 @@ export async function GET(requests: Request) {
 
     const filter: any = {};
     if (title) filter.title = { $regex: title, $options: "i" };
-    if (catagories) filter.catagories = { $regex: catagories, $options: "i" };
+    if (catagories) {
+      const typesArray = catagories.split(","); // Assuming catagories is a comma-separated string
+      filter.catagories = { $in: typesArray };
+    }
+
 
     const skip = (page - 1) * limit;
 
