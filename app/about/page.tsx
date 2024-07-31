@@ -34,7 +34,6 @@ const page = (props: Props) => {
         height={480}
         alt="/assets/recycleBanner.png"
       />
-      <Footer/>
     </>
   );
 };

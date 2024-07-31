@@ -15,7 +15,6 @@ export default function Home() {
       <PartnersSeciton />
       <BlogSection />
       <ContactSection />
-      <Footer/>
     </>
   );
 }

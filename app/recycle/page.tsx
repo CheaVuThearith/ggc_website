@@ -55,9 +55,7 @@ const RecyclePage = (props: Props) => {
           <SearchBar />
         </div>
       </section>
-      <Pagination/>
-      <Footer/>
-
+      <Pagination />
     </>
   );
 };
