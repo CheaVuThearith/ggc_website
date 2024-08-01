@@ -1,61 +1,52 @@
 import BlogPost from "@/components/BlogPage/BlogPost";
+
 import GreenPost from "@/components/BlogPage/GreenPost";
 import Pagination from "@/components/BlogPage/Pagination";
 import SearchBar from "@/components/BlogPage/SearchBar";
-import Footer from "@/components/Footer";
 
-type Props = {};
-// make responsive
-const RecyclePage = (props: Props) => {
+type Props = { searchParams: any };
+
+const RecyclePage = async ({ searchParams }: Props) => {
+  const updatedParams = new URLSearchParams(searchParams);
+  const fetchData = async () => {
+    try {
+      const response = await fetch(
+        `http://localhost:3000/api/recycling-facilities?${updatedParams.toString()}`,
+        {
+          headers: {
+            "Cache-Control": "no-cache",
+          },
+        }
+      );
+      return await response.json();
+    } catch (error) {
+      console.error("Error fetching blog posts:", error);
+    }
+  };
+
+  const data: IRecyclingFacilitiesResponse = await fetchData();
   return (
     <>
-      <section className="flex flex-col -mt-10 gap-y-12">
+      <section className="-mt-10 flex flex-col gap-y-12">
         <GreenPost title="" subtitle="" image="" />
         {/* bottom section */}
-        <div className="flex flex-col-reverse xl:flex-row justify-between gap-16">
+        <div className="flex flex-col-reverse justify-between gap-16 xl:flex-row">
           {/* blog posts */}
           <div className="flex max-w-5xl shrink-0 grow flex-row flex-wrap items-center justify-center gap-12">
-            <BlogPost
-              description="26 july 2028"
-              title="Recycle"
-              subtitle="Freetext"
-              image="https://www.calliaweb.co.uk/wp-content/uploads/2015/10/450x300.jpg"
-            />
-            <BlogPost
-              description="26 july 2025"
-              title="Recycle"
-              subtitle="Freetext"
-              image="https://www.calliaweb.co.uk/wp-content/uploads/2015/10/450x300.jpg"
-            />
-            <BlogPost
-              description="26 july 2028"
-              title="Recycle"
-              subtitle="Freetext"
-              image="https://www.calliaweb.co.uk/wp-content/uploads/2015/10/450x300.jpg"
-            />
-            <BlogPost
-              description="26 july 2025"
-              title="Recycle"
-              subtitle="Freetext"
-              image="https://www.calliaweb.co.uk/wp-content/uploads/2015/10/450x300.jpg"
-            />
-            <BlogPost
-              description="26 july 2028"
-              title="Recycle"
-              subtitle="Freetext"
-              image="https://www.calliaweb.co.uk/wp-content/uploads/2015/10/450x300.jpg"
-            />
-            <BlogPost
-              description="26 july 2025"
-              title="Recycle"
-              subtitle="Freetext"
-              image="https://www.calliaweb.co.uk/wp-content/uploads/2015/10/450x300.jpg"
-            />
+            {data.data.map((facility, index) => (
+              <BlogPost
+                key={index}
+                description={facility.description}
+                title={facility.name}
+                subtitle={facility.description}
+                image={facility.image}
+              />
+            ))}
           </div>
           <SearchBar />
         </div>
       </section>
-      <Pagination />
+      <Pagination pagination={data.pagination} />
     </>
   );
 };

@@ -12,7 +12,7 @@ const BlogPost = ({ title, subtitle, description, image }: props) => {
       <img
         className="aspect-auto min-h-[230px] w-full min-w-[430px] object-cover"
         src={image}
-        alt="Blog Post"
+        alt={image}
       />
       <div className="p-4">
         <div className="text-primary text-sm font-semibold">{description}</div>
@@ -24,4 +24,3 @@ const BlogPost = ({ title, subtitle, description, image }: props) => {
 };
 
 export default BlogPost;
-
