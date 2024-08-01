@@ -11,7 +11,7 @@ const RecyclePage = async ({ searchParams }: Props) => {
   const fetchData = async () => {
     try {
       const response = await fetch(
-        `http://localhost:3000/api/blog-posts?${updatedParams.toString()}`,
+        `${process.env.LOCAL_PATH}/api/blog-posts?${updatedParams.toString()}`,
         {
           headers: {
             "Cache-Control": "no-cache",
