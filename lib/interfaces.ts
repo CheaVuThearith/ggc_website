@@ -22,10 +22,24 @@ interface IRecyclingFacilitiesResponse {
   pagination: IPagination;
 }
 
+interface IBlogPost {
+  title: string;
+  author: string;
+  content: string;
+  image: string;
+  catagories: string[];
+}
+
+interface IBlogPostsResponse {
+  data: IBlogPost[];
+  pagination: IPagination;
+}
+
 interface ISearchParams {
   name: string;
   location: string;
   typesOfWaste: string;
+  genres: string;
   page: number;
   limit: number;
 }

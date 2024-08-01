@@ -22,7 +22,7 @@ export async function POST(request: Request) {
       { message: "entry added", data: data },
       { status: 201 }
     );
-  } catch (error) {
+  } catch (error: any) {
     return NextResponse.json({ error: error.message }, { status: 500 });
   }
 }
@@ -64,10 +64,7 @@ export async function GET(request: Request) {
         totalPages: Math.ceil(total / limit),
       },
     });
-  } catch (error) {
-    return NextResponse.json(
-      { error: error.message },
-      { status: 500 }
-    );
+  } catch (error:any) {
+    return NextResponse.json({ error: error.message }, { status: 500 });
   }
 }

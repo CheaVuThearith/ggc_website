@@ -2,11 +2,11 @@ import React from "react";
 
 type props = {
   title: string;
-  subtitle: string;
   description: string;
+  author: string;
   image: string;
 };
-const BlogPost = ({ title, subtitle, description, image }: props) => {
+const BlogPost = ({ title, description, author, image }: props) => {
   return (
     <div className="max-w-fit grow overflow-hidden rounded-lg bg-white shadow-md">
       <img
@@ -15,9 +15,9 @@ const BlogPost = ({ title, subtitle, description, image }: props) => {
         alt={image}
       />
       <div className="p-4">
-        <div className="text-primary text-sm font-semibold">{description}</div>
+        <div className="text-primary text-sm font-semibold">{author}</div>
         <h2 className="mt-2 text-xl font-bold text-gray-900">{title}</h2>
-        <p className="mt-2 text-gray-600">{subtitle}</p>
+        <p className="mt-2 text-gray-600">{description}</p>
       </div>
     </div>
   );

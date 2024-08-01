@@ -13,7 +13,7 @@ export async function POST(request: Request) {
       { message: "entry added", data: data },
       { status: 201 }
     );
-  } catch (error) {
+  } catch (error: any) {
     return NextResponse.json({ error: error.message }, { status: 500 });
   }
 }
@@ -35,7 +35,6 @@ export async function GET(requests: Request) {
       const typesArray = catagories.split(","); // Assuming catagories is a comma-separated string
       filter.catagories = { $in: typesArray };
     }
-
 
     const skip = (page - 1) * limit;
 

@@ -38,12 +38,12 @@ const RecyclePage = async ({ searchParams }: Props) => {
                 key={index}
                 description={facility.description}
                 title={facility.name}
-                subtitle={facility.description}
+                author=""
                 image={facility.image}
               />
             ))}
           </div>
-          <SearchBar />
+          <SearchBar searchOptions={[]} />
         </div>
       </section>
       <Pagination pagination={data.pagination} />

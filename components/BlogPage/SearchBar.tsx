@@ -1,9 +1,10 @@
 "use client";
 import React, { useState } from "react";
 
-type Props = {};
-const searchOptions = ["Recent", "Reuse", "Reduce", "Recycle"] as const;
-const SearchBar = (props: Props) => {
+type Props = {
+  searchOptions: string[];
+};
+const SearchBar = ({ searchOptions }: Props) => {
   const [selected, setselected] =
     useState<(typeof searchOptions)[number]>("Recent");
   return (
