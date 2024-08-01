@@ -24,6 +24,7 @@ const RecyclePage = async ({ searchParams }: Props) => {
     }
   };
 
+  
   const data: IBlogPostsResponse = await fetchData();
   return (
     <>
