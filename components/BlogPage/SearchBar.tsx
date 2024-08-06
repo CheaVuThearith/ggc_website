@@ -4,6 +4,7 @@ import React, { useState } from "react";
 type Props = {
   searchOptions: string[];
 };
+// TODO: add search functionality
 const SearchBar = ({ searchOptions }: Props) => {
   const [selected, setselected] =
     useState<(typeof searchOptions)[number]>("Recent");

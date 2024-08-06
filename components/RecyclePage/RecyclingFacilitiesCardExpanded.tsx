@@ -49,10 +49,9 @@ const RecyclingFacilitiesCardExpanded = ({
         >
           {/* map */}
           <motion.iframe
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: .5 }}
-          
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.5 }}
             src={iframe}
             className="shrink-0 rounded-lg"
             width={500}
@@ -83,10 +82,11 @@ const RecyclingFacilitiesCardExpanded = ({
               </div>
             </div>
             {/* extra info */}
-            <motion.div 
-            layoutId={layoutId + "info"}
-            layout="position"
-             className="flex flex-col gap-y-2">
+            <motion.div
+              layoutId={layoutId + "info"}
+              layout="position"
+              className="flex flex-col gap-y-2"
+            >
               <p className="flex flex-row items-center gap-x-2 text-lg font-bold">
                 <FaMapMarkerAlt />
                 Location:<span className="font-normal">{location}</span>
