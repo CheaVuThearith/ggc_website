@@ -39,13 +39,13 @@ const RecyclingFacilitiesCardExpanded = ({
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
-        className="fixed inset-0 z-50 flex cursor-pointer items-center justify-center bg-black/50"
+        className="fixed inset-0 z-50 flex items-center justify-center bg-black/50"
       >
-        <div onClick={onClick} className="fixed inset-0"></div>
+        <div onClick={onClick} className="fixed  inset-0"></div>
 
         <motion.div
           layoutId={layoutId}
-          className="flex items-center justify-between gap-x-24 rounded-lg bg-white px-24 py-16 shadow-lg"
+          className="flex z-10 items-center justify-between gap-x-24 rounded-lg bg-white px-24 py-16 shadow-lg"
         >
           {/* map */}
           <motion.iframe

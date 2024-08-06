@@ -28,7 +28,7 @@ const RecyclingFacilitiesCard = ({
     <AnimatePresence>
       <motion.div
         onClick={onClick}
-        className="relative rounded-lg border p-6 shadow-md"
+        className="relative bg-white rounded-lg border p-6 shadow-md"
         layoutId={layoutId}
       >
         {/* open status */}
