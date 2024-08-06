@@ -9,6 +9,7 @@ interface IRecyclingFacility {
   links: { [key: string]: string };
   startHour: Date;
   endHour: Date;
+  contact: { phone: string; email: string };
 }
 interface IPagination {
   total: number;

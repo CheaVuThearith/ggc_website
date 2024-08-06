@@ -12,6 +12,7 @@ interface IRecyclingFacility extends Document {
   startHour: Date;
   endHour: Date;
 }
+// TODO: add contact
 
 const stripSecondsAndMilliseconds = (date: Date): Date => {
   date.setSeconds(0, 0);

@@ -1,8 +1,6 @@
-import BlogPost from "@/components/BlogPage/BlogPost";
-
-import GreenPost from "@/components/BlogPage/GreenPost";
 import Pagination from "@/components/BlogPage/Pagination";
 import SearchBar from "@/components/BlogPage/SearchBar";
+import FacilitiesContainer from "@/components/RecyclePage/FacilitiesContainer";
 
 type Props = { searchParams: any };
 
@@ -28,21 +26,11 @@ const RecyclePage = async ({ searchParams }: Props) => {
   return (
     <>
       <section className="-mt-10 flex flex-col gap-y-12">
-        <GreenPost title="" subtitle="" image="" />
+        {/* <GreenPost title="" subtitle="" image="" /> */}
         {/* bottom section */}
         <div className="flex flex-col-reverse justify-between gap-16 xl:flex-row">
           {/* blog posts */}
-          <div className="flex max-w-5xl shrink-0 grow flex-row flex-wrap items-center justify-center gap-12">
-            {data.data.map((facility, index) => (
-              <BlogPost
-                key={index}
-                description={facility.description}
-                title={facility.name}
-                author=""
-                image={facility.image}
-              />
-            ))}
-          </div>
+          <FacilitiesContainer data={data} />
           <SearchBar searchOptions={[]} />
         </div>
       </section>
