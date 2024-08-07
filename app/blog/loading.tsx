@@ -2,16 +2,16 @@ import GreenPost from "@/components/BlogPage/GreenPost";
 import Pagination from "@/components/BlogPage/Pagination";
 import SearchBar from "@/components/BlogPage/SearchBar";
 import RecyclingFacilitiesCardLoading from "@/components/RecyclePage/RecyclingFacilitiesCardLoading";
+import { Suspense } from "react";
 
-type Props = { searchParams: any };
-
-const RecyclePage = async ({ searchParams }: Props) => {
+const BlogLoading = () => {
   const data: IRecyclingFacilitiesResponse = {
     data: [],
     pagination: { limit: 0, page: 0, totalPages: 0, total: 0 },
   };
   return (
     <>
+    <Suspense>
       <section className="-mt-10 flex flex-col gap-y-12">
         <GreenPost title="" subtitle="" image="" />
         {/* bottom section */}
@@ -31,8 +31,9 @@ const RecyclePage = async ({ searchParams }: Props) => {
         </div>
       </section>
       <Pagination pagination={data.pagination} />
+      </Suspense>
     </>
   );
 };
 
-export default RecyclePage;
+export default BlogLoading;

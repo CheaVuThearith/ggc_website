@@ -26,7 +26,6 @@ const SearchBar = ({ searchOptions }: Props) => {
   }, [selected, router, search]);
 
   return (
-    <Suspense>
       <div className="sticky top-32 flex flex-col gap-y-4">
         {/* search bar */}
         <div className="before:content-search-icon relative w-full before:absolute before:inset-y-0 before:z-10 before:my-auto before:ml-3 before:size-6 before:opacity-35 xl:w-auto">
@@ -51,7 +50,7 @@ const SearchBar = ({ searchOptions }: Props) => {
           ))}
         </ul>
       </div>
-    </Suspense>
+
   );
 };
 

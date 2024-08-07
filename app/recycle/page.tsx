@@ -1,6 +1,7 @@
 import Pagination from "@/components/BlogPage/Pagination";
 import SearchBar from "@/components/BlogPage/SearchBar";
 import FacilitiesContainer from "@/components/RecyclePage/FacilitiesContainer";
+import { Suspense } from "react";
 
 type Props = { searchParams: any };
 
