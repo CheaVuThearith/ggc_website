@@ -8,11 +8,11 @@ interface IRecyclingFacility extends Document {
   description: string;
   typesOfWaste: string[];
   image: string;
-  links: { [key: string]: string };
+  links: { website: string; facebook: string; instagram: string };
+  contact: { phone: string; email: string };
   startHour: Date;
   endHour: Date;
 }
-// TODO: add contact
 
 const stripSecondsAndMilliseconds = (date: Date): Date => {
   date.setSeconds(0, 0);
@@ -31,6 +31,7 @@ const RecyclingFacilitySchema: Schema = new Schema({
   typesOfWaste: [{ type: String, required: true }],
   image: { type: String, required: true },
   links: { type: Map, of: String, required: true },
+  contact: { type: Map, of: String, required: true },
   startHour: { type: Date, required: true, set: stripSecondsAndMilliseconds },
   endHour: { type: Date, required: true, set: stripSecondsAndMilliseconds },
 });

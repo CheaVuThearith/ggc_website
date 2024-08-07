@@ -36,7 +36,7 @@ export async function GET(request: Request) {
 
     const name = searchParams.get("name") || "";
     const location = searchParams.get("location") || "";
-    const typesOfWaste = searchParams.get("typesOfWaste") || "";
+    const typesOfWaste = searchParams.get("category") || "";
     const page = parseInt(searchParams.get("page") || "1", 10);
     const limit = parseInt(searchParams.get("limit") || "10", 10);
 
