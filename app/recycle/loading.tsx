@@ -6,22 +6,10 @@ import RecyclingFacilitiesCardLoading from "@/components/RecyclePage/RecyclingFa
 type Props = { searchParams: any };
 
 const RecyclePage = async ({ searchParams }: Props) => {
-  const updatedParams = new URLSearchParams(searchParams);
-  const fetchData = async () => {
-    try {
-      const response = await fetch(
-        `${process.env.LOCAL_PATH}/api/recycling-facilities?${updatedParams.toString()}`,
-        {
-          cache: "no-store",
-        }
-      );
-      return await response.json();
-    } catch (error) {
-      console.error("Error fetching blog posts:", error);
-    }
+  const data: IRecyclingFacilitiesResponse = {
+    data: [],
+    pagination: { limit: 0, page: 0, totalPages: 0, total: 0 },
   };
-
-  const data: IRecyclingFacilitiesResponse = await fetchData();
   return (
     <>
       <section className="-mt-10 flex flex-col gap-y-12">
@@ -29,7 +17,14 @@ const RecyclePage = async ({ searchParams }: Props) => {
         {/* bottom section */}
         <div className="flex flex-col-reverse justify-between gap-16 xl:flex-row">
           {/* blog posts */}
-          <FacilitiesContainer data={data} />
+          {/* <FacilitiesContainer data={data} /> */}
+          <div className="flex min-h-[520px] max-w-5xl shrink-0 grow flex-row flex-wrap items-stretch justify-center gap-12">
+            <RecyclingFacilitiesCardLoading />
+            <RecyclingFacilitiesCardLoading />
+            <RecyclingFacilitiesCardLoading />
+            <RecyclingFacilitiesCardLoading />
+            <RecyclingFacilitiesCardLoading />
+          </div>
           <SearchBar
             searchOptions={["Paper", "Plastic", "Foam", "Aluminium", "Steel"]}
           />

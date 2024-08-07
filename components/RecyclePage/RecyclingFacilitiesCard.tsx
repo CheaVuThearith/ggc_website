@@ -33,7 +33,7 @@ const RecyclingFacilitiesCard = ({
     <AnimatePresence>
       <motion.div
         onClick={onClick}
-        className="relative rounded-lg border bg-white p-6 shadow-md"
+        className="relative max-w-fit rounded-lg border bg-white p-6 shadow-md"
         layoutId={layoutId}
       >
         {/* open status */}
@@ -43,7 +43,7 @@ const RecyclingFacilitiesCard = ({
           {openStatus ? "Open Now!" : "Closed!"}
         </span>
 
-        <div className="flex flex-col gap-x-6 gap-y-3">
+        <div className="flex flex-col gap-x-6 max-w-[350px] gap-y-3">
           {/* img */}
           <motion.div layoutId={layoutId + "image"} layout="position">
             <Image
