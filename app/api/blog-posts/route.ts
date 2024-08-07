@@ -25,7 +25,7 @@ export async function GET(requests: Request) {
     const searchParams = url.searchParams;
 
     const title = searchParams.get("title") || "";
-    const catagories = searchParams.get("genres") || "";
+    const catagories = searchParams.get("category") || "";
     const page = parseInt(searchParams.get("page") || "1", 10);
     const limit = parseInt(searchParams.get("limit") || "10", 10);
 
