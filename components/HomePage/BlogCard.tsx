@@ -17,9 +17,11 @@ const BlogCard = ({ title, subtitle, image }: props) => {
         </h2>
         <p className="mt-2 text-center text-gray-600">{subtitle}</p>
         <div className="mt-4 flex justify-center">
-          <button className="bg-primary rounded-md px-4 py-2 font-bold text-white">
+          <a 
+          href="/blog"
+          className="bg-primary rounded-md px-4 py-2 font-bold text-white">
             READ MORE
-          </button>
+          </a>
         </div>
       </div>
     </div>

@@ -17,9 +17,9 @@ const RecyclingCard = ({ image, title, subtitle }: Props) => {
         <p className="text-center text-gray-600">{subtitle}</p>
       </div>
       {/* button */}
-      <button className="bg-primary -mt-2 max-w-fit rounded-md px-12 py-2 font-bold text-white">
+      <a href="/recycle" className="bg-primary -mt-2 max-w-fit rounded-md px-12 py-2 font-bold text-white">
         Visit
-      </button>
+      </a>
     </div>
   );
 };
