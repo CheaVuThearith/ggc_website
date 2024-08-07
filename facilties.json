@@ -1,10 +1,11 @@
 [
   {
     "location": "Phnom Penh",
-    "iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3909.232205368935!2d104.94248171069215!3d11.535193644692653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310957738ad778c9%3A0x4ae84aa1421af4d!2z4Z6Y4Z6H4Z-S4Z6N4Z6Y4Z6O4Z-S4Z6M4Z6b4Z6C4Z-S4Z6Y4Z624Z6T4Z6f4Z-G4Z6O4Z6b4Z-LIFplcm8gV2FzdGUgQ2VudGVy!5e0!3m2!1sen!2skh!4v1722394968087!5m2!1sen!2skh",
-    "fee": false,
-    "name": "Zero Waste Center",
-    "description": "",
+    "iframe": "https://www.google.com/maps/dir//%23780,+St+31MC,+%E1%9E%97%E1%9E%BC%E1%9E%98%E1%9E%B7%E1%9E%AC%E1%9E%9F%E1%9F%92%E1%9E%9F%E1%9E%B82+%E1%9E%9F%E1%9E%84%E1%9F%92%E1%9E%80%E1%9E%B6%E1%9E%8F%E1%9F%8B%E1%9E%9F%E1%9F%92%E1%9E%91%E1%9E%B9%E1%9E%84%E1%9E%98%E1%9E%B6%E1%9E%93%E1%9E%87%E1%9F%90%E1%9E%993+%E1%9E%81%E1%9E%8E%E1%9F%92%E1%9E%8C%E1%9E%98%E1%9E%B6%E1%9E%93%E1%9E%87%E1%9F%90%E1%9E%99%E2%80%8B+%E1%9E%9A%E1%9E%B6%E1%9E%87%E1%9E%92%E1%9E%B6%E1%9E%93%E1%9E%B8%E1%9E%97%E1%9F%92%E1%9E%93%E1%9F%86%E1%9E%96%E1%9F%81%E1%9E%89%E1%9F%94,+Street+2,+Phnom+Penh/@11.530764,104.8938104,15z/data=!4m8!4m7!1m0!1m5!1m1!1s0x31095179bacb37c1:0x73a0cf2ad27fb599!2m2!1d104.8844861!2d11.52586?entry=ttu",
+    "fee": true,
+    "name": "គុណវឌ្ឍន៍​ Recycle Shop, Kunawat Recycle Shop",
+    "description": "Recycle Shop",
+    "contact": { "phone": "096 722 2287", "email": "" },
     "typesOfWaste": ["plastic", "cardboard", "paper"],
     "image": "https://zerowastecenter.org/wp-content/uploads/2021/01/ROLE_ZeroWaste_1_web_CS6-06-1.png",
     "links": {
@@ -12,8 +13,8 @@
       "instagram": "https://www.instagram.com/wastefreeplanet/?hl=en",
       "website": ""
     },
-    "startHour": "2023-07-28T08:00:00.000Z",
-    "endHour": "2023-07-28T17:00:00.000Z"
+    "startHour": "8 AM",
+    "endHour": "7 PM"
   },
   {
     "location": "Phnom Penh",
@@ -21,6 +22,7 @@
     "fee": false,
     "name": "Virak Recycle",
     "description": "",
+    "contact": { "phone": "", "email": "" },
     "typesOfWaste": [],
     "image": "https://virakrecycle.com/wp-content/uploads/2022/04/Virak-Recycle-Logo-e1649229620459.png",
     "links": {
@@ -37,6 +39,7 @@
     "fee": false,
     "name": "Catalytic Buyer (Ecotrade Partner)",
     "description": "",
+    "contact": { "phone": "", "email": "" },
     "typesOfWaste": [],
     "image": "",
     "links": {
@@ -53,6 +56,7 @@
     "fee": false,
     "name": "Trash is Nice",
     "description": "",
+    "contact": { "phone": "", "email": "" },
     "typesOfWaste": [],
     "image": "",
     "links": {
@@ -69,6 +73,7 @@
     "fee": false,
     "name": "Gomi Recycle",
     "description": "",
+    "contact": { "phone": "", "email": "" },
     "typesOfWaste": [],
     "image": "",
     "links": {
@@ -85,11 +90,11 @@
     "fee": false,
     "name": "រោងចក្រកែច្នៃស្នោ និងសំបកបាវចាស់",
     "description": "",
+    "contact": { "phone": "", "email": "" },
     "typesOfWaste": [],
     "image": "",
-   
 
- "links": {
+    "links": {
       "facebook": "",
       "instagram": "",
       "website": ""
@@ -103,6 +108,7 @@
     "fee": false,
     "name": "Compost City",
     "description": "",
+    "contact": { "phone": "", "email": "" },
     "typesOfWaste": [],
     "image": "",
     "links": {
