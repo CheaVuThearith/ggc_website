@@ -1,7 +1,6 @@
 import Pagination from "@/components/BlogPage/Pagination";
 import SearchBar from "@/components/BlogPage/SearchBar";
 import FacilitiesContainer from "@/components/RecyclePage/FacilitiesContainer";
-import RecyclingFacilitiesCardLoading from "@/components/RecyclePage/RecyclingFacilitiesCardLoading";
 
 type Props = { searchParams: any };
 
