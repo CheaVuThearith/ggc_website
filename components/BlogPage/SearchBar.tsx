@@ -15,8 +15,9 @@ const SearchBar = ({ searchOptions }: Props) => {
     const updatedParams = new URLSearchParams(searchParams.toString());
     updatedParams.set(
       "category",
-      `${(searchParams.get("category") == null || searchParams.get("category") == "") && selected == "" ? "" : `${selected.toLowerCase()},`}`
+      `${selected == "" ? "" : `${selected.toLowerCase()},`}`
     );
+    console.log(updatedParams.get("category"));
     updatedParams.set("name", `${search.toLowerCase()}`);
 
     router.push(`?${updatedParams.toString()}`);
@@ -42,7 +43,7 @@ const SearchBar = ({ searchOptions }: Props) => {
           {searchOptions.map((option, index) => (
             <li
               className={`flex h-[3.125rem] cursor-pointer items-center rounded-full px-4 text-xl transition-all duration-200 xl:rounded-md ${selected == option && "bg-gray-200"}`}
-              onClick={() => setSelected(option)}
+              onClick={() => setSelected((o) => (o == option ? "" : option))}
               key={index}
             >
               {option}
