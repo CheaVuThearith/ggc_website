@@ -3,15 +3,15 @@
     "location": "Phnom Penh",
     "iframe": "https://www.google.com/maps/dir//%23780,+St+31MC,+%E1%9E%97%E1%9E%BC%E1%9E%98%E1%9E%B7%E1%9E%AC%E1%9E%9F%E1%9F%92%E1%9E%9F%E1%9E%B82+%E1%9E%9F%E1%9E%84%E1%9F%92%E1%9E%80%E1%9E%B6%E1%9E%8F%E1%9F%8B%E1%9E%9F%E1%9F%92%E1%9E%91%E1%9E%B9%E1%9E%84%E1%9E%98%E1%9E%B6%E1%9E%93%E1%9E%87%E1%9F%90%E1%9E%993+%E1%9E%81%E1%9E%8E%E1%9F%92%E1%9E%8C%E1%9E%98%E1%9E%B6%E1%9E%93%E1%9E%87%E1%9F%90%E1%9E%99%E2%80%8B+%E1%9E%9A%E1%9E%B6%E1%9E%87%E1%9E%92%E1%9E%B6%E1%9E%93%E1%9E%B8%E1%9E%97%E1%9F%92%E1%9E%93%E1%9F%86%E1%9E%96%E1%9F%81%E1%9E%89%E1%9F%94,+Street+2,+Phnom+Penh/@11.530764,104.8938104,15z/data=!4m8!4m7!1m0!1m5!1m1!1s0x31095179bacb37c1:0x73a0cf2ad27fb599!2m2!1d104.8844861!2d11.52586?entry=ttu",
     "fee": true,
-    "name": "គុណវឌ្ឍន៍​ Recycle Shop, Kunawat Recycle Shop",
-    "description": "Recycle Shop",
-    "contact": { "phone": "096 722 2287", "email": "" },
+    "name": "ONLY ONE PLANET ",
+    "description": "We are a social enterprise that sells eco products, uses profits to support eco actions in Cambodia.",
+    "contact": { "phone": "097 852 6151", "email": "onlyoneplanetcambodia@gmail.com" },
     "typesOfWaste": ["plastic", "cardboard", "paper"],
-    "image": "https://zerowastecenter.org/wp-content/uploads/2021/01/ROLE_ZeroWaste_1_web_CS6-06-1.png",
+    "image": "https://drive.google.com/uc?export=view&id=1Wx8WlVETA_x3Jc4C96sx-Etz0zD5eMye",
     "links": {
-      "facebook": "https://www.facebook.com/roc.org/posts/517125036815374/?locale=ms_MY",
+      "facebook": "https://www.facebook.com/onlyoneplanet2",
       "instagram": "https://www.instagram.com/wastefreeplanet/?hl=en",
-      "website": ""
+      "website": "https://onlyoneplanetkh.com/?fbclid=IwY2xjawEfxj5leHRuA2FlbQIxMAABHU3i6mph3LheBbofVqYoSPnmI7-Weszmkr0dVZWbzWgzRlmixP6h0I9l5g_aem_WCmCHlWnmaJFeqHGEcJvpQ"
     },
     "startHour": "2023-07-28T08:00:00.000Z",
     "endHour": "2023-07-28T17:00:00.000Z"
@@ -24,7 +24,7 @@
     "description": "Specializes in recycling various materials including metals and paper.",
     "contact": { "phone": "081 660 689", "email": "buntha@virakrecycle.com" },
     "typesOfWaste": [],
-    "image": "https://virakrecycle.com/wp-content/uploads/2022/04/Virak-Recycle-Logo-e1649229620459.png",
+    "image": "https://drive.google.com/uc?export=view&id=1FQwI0Y44Lrmnm_oewgnwHzjtYKhrUHtj",
     "links": {
       "facebook": "https://www.facebook.com/vrgroupkh",
       "instagram": "https://www.instagram.com/virakrecycle/",
@@ -41,7 +41,7 @@
     "description": "Ecotrade Group specializes in purchasing and recycling catalytic converters. They have extensive experience and offer a transparent buying process with real-time pricing for scrap catalytic converters. The company provides full and quick payment for agreed values, with a focus on efficiency and customer service.",
     "contact": { "phone": "011594972", "email": "" },
     "typesOfWaste": ["Catalytic converters"," diesel particulate filters"],
-    "image": "",
+    "image": "https://drive.google.com/uc?export=view&id=1huYY9lyHGAtmp6jIEAHorBewPVj1p522",
     "links": {
       "facebook": "https://www.facebook.com/ecotradecambodia",
       "instagram": "",
@@ -58,7 +58,7 @@
     "description": "Recycles plastic bags, foam, and aluminum cans; produces new products.",
     "contact": { "phone": "086752046", "email": "plasticells@gmail.com" },
     "typesOfWaste": ["plastic","foam","aluminum cans"],
-    "image": "",
+    "image": "https://drive.google.com/uc?export=view&id=1j27MvA_j16tSwb47quFYvi8gHx0y37GQ",
     "links": {
       "facebook": "https://www.facebook.com/trashisnice/",
       "instagram": "https://www.instagram.com/trashisnice_/?hl=en",
@@ -75,7 +75,7 @@
     "description": "Gomi Recycle 110, a Japanese company, plans to build a factory in Phnom Penh to recycle plastic waste into eco-friendly products like furniture and eco-bricks. They aim to convert waste into energy and other resources, addressing Cambodia's growing waste management challenges.",
     "contact": { "phone": "077 998 579", "email": "gomiplaycle@gmail.com" },
     "typesOfWaste": ["Plastic waste, with plans to expand to other waste types for energy production."],
-    "image": "https://earthnowa.com/img/share/ft-logo-w.png",
+    "image": "https://drive.google.com/uc?export=view&id=11REZIMCRlOoX8DDWBzIJ43aV-F-ctMRv",
     "links": {
       "facebook": "https://www.facebook.com/gomirecyclephnompenh",
       "instagram": "https://www.instagram.com/gomi.recycle/",
@@ -92,7 +92,7 @@
     "description": "This factory specializes in recycling old plastic bags, foam, and large sacks, transforming them into semi-finished raw materials and new products such as black and white plastic bags, foam boxes, and other items. The facility also employs many older workers and supports the local community by encouraging waste separation and proper recycling practices.",
     "contact": { "phone": "+855 12 995 944", "email": "anak@villageworks.biz" },
     "typesOfWaste": ["plastic bag","foam","large sacks(white and blue","rice sacks"],
-    "image": "",
+    "image": "https://drive.google.com/uc?export=view&id=1Z8ysInxeTzm90f0x2T3Kh651NZ8iUbaK",
 
     "links": {
       "facebook": "",
@@ -110,7 +110,7 @@
     "description": "Social entreprise | Experiential learning | To reconnect people with environmental care | Community. Food. Garden",
     "contact": { "phone": "086 826 510", "email": "compostcitypp@gmail.com" },
     "typesOfWaste": ["organic waste","Recycle waste","hasadous waste","construction waste","industrial waste"],
-    "image": "",
+    "image": "https://drive.google.com/uc?export=view&id=1QYsTWRbUK0lobot4UJfqQI4Rnp97TYEz",
     "links": {
       "facebook": "https://www.facebook.com/compostcitylife/",
       "instagram": "https://www.instagram.com/compost.city/",
