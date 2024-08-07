@@ -25,3 +25,4 @@
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "public/assets/icons/Earth_leaf.tsc"],
   "exclude": ["node_modules"]
 }
+
