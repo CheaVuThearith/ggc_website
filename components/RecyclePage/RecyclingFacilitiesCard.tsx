@@ -23,12 +23,17 @@ const RecyclingFacilitiesCard = ({
   image,
   layoutId,
 }: Props) => {
-  const openStatus = false;
+  const startHourDate = new Date(startHour);
+  const endHourDate = new Date(endHour);
+  const currentHour = new Date().getHours();
+  const openStatus =
+    currentHour >= startHourDate.getHours() &&
+    currentHour < endHourDate.getHours();
   return (
     <AnimatePresence>
       <motion.div
         onClick={onClick}
-        className="relative bg-white rounded-lg border p-6 shadow-md"
+        className="relative rounded-lg border bg-white p-6 shadow-md"
         layoutId={layoutId}
       >
         {/* open status */}
@@ -77,12 +82,12 @@ const RecyclingFacilitiesCard = ({
               <div className="flex items-center gap-x-2 text-gray-600">
                 <FaClock className="" />
                 <p>
-                  {new Date(startHour).toLocaleTimeString([], {
+                  {startHourDate.toLocaleTimeString([], {
                     hour: "2-digit",
                     minute: "2-digit",
                   })}{" "}
                   -{" "}
-                  {new Date(endHour).toLocaleTimeString([], {
+                  {endHourDate.toLocaleTimeString([], {
                     hour: "2-digit",
                     minute: "2-digit",
                   })}

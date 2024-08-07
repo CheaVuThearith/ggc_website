@@ -13,11 +13,16 @@ const SearchBar = ({ searchOptions }: Props) => {
 
   useEffect(() => {
     const updatedParams = new URLSearchParams(searchParams.toString());
-    updatedParams.set("category", `${selected.toLowerCase()},`);
+    updatedParams.set(
+      "category",
+      `${(searchParams.get("category") == null || searchParams.get("category") == "") && selected == "" ? "" : `${selected.toLowerCase()},`}`
+    );
     updatedParams.set("name", `${search.toLowerCase()}`);
 
     router.push(`?${updatedParams.toString()}`);
-  }, [selected, router, search, searchParams]);
+    console.log("searchParams", updatedParams.toString());
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [selected, router, search]);
 
   return (
     <div>
