@@ -13,16 +13,16 @@
       "instagram": "https://www.instagram.com/wastefreeplanet/?hl=en",
       "website": ""
     },
-    "startHour": "8 AM",
-    "endHour": "7 PM"
+    "startHour": "2023-07-28T08:00:00.000Z",
+    "endHour": "2023-07-28T17:00:00.000Z"
   },
   {
     "location": "Phnom Penh",
     "iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31273.93282957178!2d104.96733997910157!3d11.534518700000008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310957a51db218a9%3A0xee0847b8c270d413!2zVmlyYWsgUmVjeWNsZSAtIOGekeGet-GeieGeouGfgeGej-GeheGetuGemQ!5e0!3m2!1sen!2skh!4v1722395231237!5m2!1sen!2skh",
-    "fee": false,
+    "fee": true,
     "name": "Virak Recycle",
-    "description": "",
-    "contact": { "phone": "", "email": "" },
+    "description": "Specializes in recycling various materials including metals and paper.",
+    "contact": { "phone": "081 660 689", "email": "buntha@virakrecycle.com" },
     "typesOfWaste": [],
     "image": "https://virakrecycle.com/wp-content/uploads/2022/04/Virak-Recycle-Logo-e1649229620459.png",
     "links": {
@@ -36,16 +36,16 @@
   {
     "location": "Phnom Penh",
     "iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31276.924500804995!2d104.80442137910156!3d11.507631000000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31094ff954fe47b5%3A0x4f1316a35df36fe6!2sCatalytic%20Buyer%20(Ecotrade%20Partner)!5e0!3m2!1sen!2skh!4v1722395264923!5m2!1sen!2skh",
-    "fee": false,
+    "fee": true,
     "name": "Catalytic Buyer (Ecotrade Partner)",
-    "description": "",
-    "contact": { "phone": "", "email": "" },
-    "typesOfWaste": [],
+    "description": "Ecotrade Group specializes in purchasing and recycling catalytic converters. They have extensive experience and offer a transparent buying process with real-time pricing for scrap catalytic converters. The company provides full and quick payment for agreed values, with a focus on efficiency and customer service.",
+    "contact": { "phone": "011594972", "email": "" },
+    "typesOfWaste": ["Catalytic converters"," diesel particulate filters"],
     "image": "",
     "links": {
       "facebook": "https://www.facebook.com/ecotradecambodia",
       "instagram": "",
-      "website": ""
+      "website": "https://www.ecotradegroup.com/km/"
     },
     "startHour": "2023-07-28T08:00:00.000Z",
     "endHour": "2023-07-28T19:00:00.000Z"
@@ -53,16 +53,16 @@
   {
     "location": "Phnom Penh",
     "iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3909.0194528437623!2d104.94033867601824!3d11.550462144437907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310957d461ff64e1%3A0x9fe5ed23ca5b2aae!2sTrash%20is%20Nice!5e0!3m2!1sen!2skh!4v1722485747290!5m2!1sen!2skh",
-    "fee": false,
+    "fee": true,
     "name": "Trash is Nice",
-    "description": "",
-    "contact": { "phone": "", "email": "" },
-    "typesOfWaste": [],
+    "description": "Recycles plastic bags, foam, and aluminum cans; produces new products.",
+    "contact": { "phone": "086752046", "email": "plasticells@gmail.com" },
+    "typesOfWaste": ["plastic","foam","aluminum cans"],
     "image": "",
     "links": {
       "facebook": "https://www.facebook.com/trashisnice/",
       "instagram": "https://www.instagram.com/trashisnice_/?hl=en",
-      "website": ""
+      "website": "https://trashisnice.wixsite.com/preciousplastic"
     },
     "startHour": "2023-07-28T09:00:00.000Z",
     "endHour": "2023-07-28T17:00:00.000Z"
@@ -72,14 +72,14 @@
     "iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31281.084000437142!2d104.74899157910157!3d11.470144100000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31094514a1d1492f%3A0xbb09464eb6ae8bfc!2sGomi%20Recycle!5e0!3m2!1sen!2skh!4v1722395308957!5m2!1sen!2skh",
     "fee": false,
     "name": "Gomi Recycle",
-    "description": "",
-    "contact": { "phone": "", "email": "" },
-    "typesOfWaste": [],
-    "image": "",
+    "description": "Gomi Recycle 110, a Japanese company, plans to build a factory in Phnom Penh to recycle plastic waste into eco-friendly products like furniture and eco-bricks. They aim to convert waste into energy and other resources, addressing Cambodia's growing waste management challenges.",
+    "contact": { "phone": "077 998 579", "email": "gomiplaycle@gmail.com" },
+    "typesOfWaste": ["Plastic waste, with plans to expand to other waste types for energy production."],
+    "image": "https://earthnowa.com/img/share/ft-logo-w.png",
     "links": {
       "facebook": "https://www.facebook.com/gomirecyclephnompenh",
       "instagram": "https://www.instagram.com/gomi.recycle/",
-      "website": ""
+      "website": "https://earthnowa.com/"
     },
     "startHour": "2023-07-28T07:30:00.000Z",
     "endHour": "2023-07-28T16:30:00.000Z"
@@ -87,11 +87,11 @@
   {
     "location": "Phnom Penh",
     "iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31282.72718319073!2d104.85652807910157!3d11.455301800000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31095b4b7b3316c5%3A0x2b106620a46f72a2!2z4Z6a4Z-E4Z6E4Z6F4Z6A4Z-S4Z6a4Z6A4Z-C4Z6F4Z-S4Z6T4Z-D4Z6f4Z-S4Z6T4Z-EIOGek-Get-GehOGen-GfhuGelOGegOGelOGetuGenOGeheGetuGen-Gfiw!5e0!3m2!1sen!2skh!4v1722395358141!5m2!1sen!2skh",
-    "fee": false,
+    "fee": true,
     "name": "រោងចក្រកែច្នៃស្នោ និងសំបកបាវចាស់",
-    "description": "",
-    "contact": { "phone": "", "email": "" },
-    "typesOfWaste": [],
+    "description": "This factory specializes in recycling old plastic bags, foam, and large sacks, transforming them into semi-finished raw materials and new products such as black and white plastic bags, foam boxes, and other items. The facility also employs many older workers and supports the local community by encouraging waste separation and proper recycling practices.",
+    "contact": { "phone": "+855 12 995 944", "email": "anak@villageworks.biz" },
+    "typesOfWaste": ["plastic bag","foam","large sacks(white and blue","rice sacks"],
     "image": "",
 
     "links": {
@@ -105,11 +105,11 @@
   {
     "location": "Phnom Penh",
     "iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3909.356553362545!2d104.91253827505298!3d11.526260388671771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310951046e2a25eb%3A0xbbcb9319a2d4c3c4!2sCompost%20City!5e0!3m2!1sen!2skh!4v1722396277723!5m2!1sen!2skh",
-    "fee": false,
+    "fee": true,
     "name": "Compost City",
-    "description": "",
-    "contact": { "phone": "", "email": "" },
-    "typesOfWaste": [],
+    "description": "Social entreprise | Experiential learning | To reconnect people with environmental care | Community. Food. Garden",
+    "contact": { "phone": "086 826 510", "email": "compostcitypp@gmail.com" },
+    "typesOfWaste": ["organic waste","Recycle waste","hasadous waste","construction waste","industrial waste"],
     "image": "",
     "links": {
       "facebook": "https://www.facebook.com/compostcitylife/",
