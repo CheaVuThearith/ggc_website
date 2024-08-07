@@ -13,7 +13,7 @@ const RecyclePage = async ({ searchParams }: Props) => {
       const response = await fetch(
         `${process.env.LOCAL_PATH}/api/blog-posts?${updatedParams.toString()}`,
         {
-          cache: "no-cache",
+          cache: "no-store",
         }
       );
       return await response.json();

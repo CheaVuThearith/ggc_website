@@ -11,7 +11,7 @@ const RecyclePage = async ({ searchParams }: Props) => {
       const response = await fetch(
         `${process.env.LOCAL_PATH}/api/recycling-facilities?${updatedParams.toString()}`,
         {
-          cache: "no-cache",
+          cache: "no-store",
         }
       );
       return await response.json();

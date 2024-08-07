@@ -9,7 +9,7 @@ type Props = { data: IRecyclingFacilitiesResponse };
 const FacilitiesContainer = ({ data }: Props) => {
   const [selectedId, setSelectedId] = useState<null | string>(null);
   return (
-    <div className="flex max-w-5xl shrink-0 grow min-h-[520px] flex-row flex-wrap items-center justify-center gap-12">
+    <div className="flex min-h-[520px] max-w-5xl shrink-0 grow flex-row flex-wrap items-center justify-center gap-12">
       {data.data.map((facility, index) => (
         <RecyclingFacilitiesCard
           onClick={() => setSelectedId(index.toString())}
@@ -18,7 +18,7 @@ const FacilitiesContainer = ({ data }: Props) => {
           startHour={facility.startHour}
           typesOfWaste={facility.typesOfWaste}
           key={index}
-          image=""
+          image={facility.image}
           location={facility.location}
           title={facility.name}
         />
