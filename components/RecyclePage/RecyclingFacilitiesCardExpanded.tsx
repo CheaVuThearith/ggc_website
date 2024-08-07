@@ -45,7 +45,7 @@ const RecyclingFacilitiesCardExpanded = ({
 
         <motion.div
           layoutId={layoutId}
-          className="flex z-10 items-center justify-between gap-x-24 rounded-lg bg-white px-24 py-16 shadow-lg"
+          className="flex z-10 items-center max-w-screen-2xl justify-between gap-x-24 rounded-lg bg-white px-24 py-16 shadow-lg"
         >
           {/* map */}
           <motion.iframe
