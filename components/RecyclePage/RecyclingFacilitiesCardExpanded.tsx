@@ -45,7 +45,7 @@ const RecyclingFacilitiesCardExpanded = ({
 
         <motion.div
           layoutId={layoutId}
-          className="z-10 flex max-w-screen-2xl items-center justify-between gap-x-24 rounded-lg bg-white px-24 py-16 shadow-lg"
+          className="z-10 flex max-w-full xl:flex-nowrap flex-wrap items-center justify-center xl:justify-between gap-x-24 gap-y-8 rounded-lg bg-white p-4 py-8 mx-4 shadow-lg xl:max-w-screen-2xl xl:px-24 xl:py-16"
         >
           {/* map */}
           <motion.iframe
@@ -53,7 +53,7 @@ const RecyclingFacilitiesCardExpanded = ({
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5 }}
             src={iframe}
-            className="shrink-0 rounded-lg"
+            className="xl:shrink-0 rounded-lg"
             width={500}
             height={425}
           />
@@ -61,7 +61,7 @@ const RecyclingFacilitiesCardExpanded = ({
             {/* title and logo */}
             <div className="flex gap-x-4">
               {/* image div */}
-              <motion.div layoutId={layoutId + "image"}>
+              <motion.div className="" layoutId={layoutId + "image"}>
                 <Image
                   width={150}
                   height={150}
@@ -70,7 +70,7 @@ const RecyclingFacilitiesCardExpanded = ({
                   alt={image}
                 />
               </motion.div>
-              <div>
+              <div className="grow">
                 <motion.h2
                   layoutId={layoutId + "title"}
                   layout="position"
@@ -78,7 +78,7 @@ const RecyclingFacilitiesCardExpanded = ({
                 >
                   {title}
                 </motion.h2>
-                <p>{description}</p>
+                <p className='overflow-hidden line-clamp-2 xl:line-clamp-3'>{description}</p>
               </div>
             </div>
             {/* extra info */}
@@ -107,9 +107,9 @@ const RecyclingFacilitiesCardExpanded = ({
                 </span>
               </p>
               <p className="flex flex-row items-center gap-x-2 text-lg font-bold">
-                <FaRecycle />
-                Types of Waste:
-                <span className="font-normal">
+                <FaRecycle className="shrink-0"/>
+                Waste:
+                <span className="font-normal line-clamp-1">
                   {typesOfWaste
                     .map(
                       (waste) => waste.charAt(0).toUpperCase() + waste.slice(1)

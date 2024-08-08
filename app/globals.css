@@ -37,6 +37,16 @@ body {
   }
 }
 
+.gradient-primary {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 23%,
+    rgba(134, 255, 106, 1) 100%
+  );
+}
+
 .loading {
   background: linear-gradient(110deg, #ececec 8%, #f5f5f5 18%, #ececec 33%);
   background-size: 200% 100%;
