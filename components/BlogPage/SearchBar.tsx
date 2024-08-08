@@ -45,7 +45,7 @@ const SearchBar = ({ searchOptions }: Props) => {
         />
       </div>
       {/* filter options */}
-      <ul className="flex flex-row items-start justify-start xl:flex-col xl:items-stretch xl:justify-center">
+      <ul className="flex flex-row items-start justify-start xl:flex-col xl:items-stretch xl:justify-center max-w-full overflow-y-scroll">
         {searchOptions.map((option, index) => (
           <li
             className={`flex h-[3.125rem] cursor-pointer items-center rounded-full px-4 text-xl transition-all duration-200 xl:rounded-md ${selected == option && "bg-gray-200"}`}
