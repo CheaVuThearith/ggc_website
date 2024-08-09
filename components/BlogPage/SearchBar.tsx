@@ -1,6 +1,6 @@
 "use client";
 import { useRouter, useSearchParams } from "next/navigation";
-import React, { Suspense, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 type Props = {
   searchOptions: string[];

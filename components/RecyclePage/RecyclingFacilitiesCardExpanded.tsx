@@ -1,4 +1,4 @@
-import { ClockIcon, EnvelopeIcon, PhoneIcon } from "@heroicons/react/16/solid";
+import { ClockIcon, EnvelopeIcon, PhoneIcon, XMarkIcon } from "@heroicons/react/16/solid";
 import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 import React from "react";
@@ -35,6 +35,7 @@ const RecyclingFacilitiesCardExpanded = ({
 }: Props) => {
   return (
     <AnimatePresence>
+      {/* bg */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -43,10 +44,14 @@ const RecyclingFacilitiesCardExpanded = ({
       >
         <div onClick={onClick} className="fixed inset-0"></div>
 
+{/* card */}
         <motion.div
           layoutId={layoutId}
-          className="z-10 flex max-w-full xl:flex-nowrap flex-wrap items-center justify-center xl:justify-between gap-x-24 gap-y-8 rounded-lg bg-white p-4 py-8 mx-4 shadow-lg xl:max-w-screen-2xl xl:px-24 xl:py-16"
+          className="z-10 flex max-w-full xl:flex-nowrap flex-wrap items-center relative justify-center xl:justify-between gap-x-24 gap-y-8 rounded-lg bg-white p-4 py-8 mx-4 shadow-lg xl:max-w-screen-2xl xl:px-24 xl:py-16"
         >
+        <XMarkIcon 
+        onClick={onClick}
+        className="cursor-pointer absolute right-4 top-4 size-8"/>
           {/* map */}
           <motion.iframe
             initial={{ opacity: 0 }}
@@ -59,7 +64,7 @@ const RecyclingFacilitiesCardExpanded = ({
           />
           <div className="flex flex-col gap-y-6">
             {/* title and logo */}
-            <div className="flex gap-x-4">
+            <div className="flex items-center gap-x-4">
               {/* image div */}
               <motion.div className="" layoutId={layoutId + "image"}>
                 <Image
@@ -70,7 +75,7 @@ const RecyclingFacilitiesCardExpanded = ({
                   alt={image}
                 />
               </motion.div>
-              <div className="grow">
+              <div className="grow flex justify-center flex-col">
                 <motion.h2
                   layoutId={layoutId + "title"}
                   layout="position"

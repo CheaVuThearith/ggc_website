@@ -2,7 +2,6 @@ import Image from "next/image";
 import React from "react";
 
 type Props = { image: string; title: string; subtitle: string };
-const searchOptions = ["Recent Posts", "Reuse", "Reduce", "Recycle"];
 
 const GreenPost = ({ image, title, subtitle }: Props) => {
   return (

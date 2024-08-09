@@ -1,8 +1,6 @@
-import React from "react";
-import Section from "@/components/Section";
 import MissionSection from "@/components/HomePage/Sections/MissionSection";
+import Section from "@/components/Section";
 import Image from "next/image";
-import Footer from "@/components/Footer";
 
 const page = () => {
   return (

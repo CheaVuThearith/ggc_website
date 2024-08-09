@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className="font-primary flex flex-col items-center md:scale-100 scale-75 justify-center"
+      className="font-primary flex flex-col items-center justify-center"
     >
       <body
         className={`my-14 flex w-[100%] max-w-screen-2xl flex-col gap-y-20 overflow-x-hidden px-8 ${inter.className}`}
