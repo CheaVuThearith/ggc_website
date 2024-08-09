@@ -44,11 +44,10 @@ function Navbar() {
                   layout="position"
                   className="flex-col gap-y-2 xl:flex"
                 >
-                  <h1 className="font-accent text-3xl">
-                    <span className="text-primary hidden xl:block">Green</span>{" "}
-                    Growth Cycle
-                    <span className="block xl:hidden">GGC</span>
+                  <h1 className="font-accent hidden text-3xl xl:block">
+                    <span className="text-primary">Green</span> Growth Cycle
                   </h1>
+                  <h1 className="font-accent block text-3xl xl:hidden">GGC</h1>
                   {windowWidth > 1280 && (
                     <p className="font-primary text-xl">
                       Small Actions Can Lead to Big Changes
