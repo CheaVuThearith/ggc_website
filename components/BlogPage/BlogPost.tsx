@@ -10,7 +10,7 @@ const BlogPost = ({ title, description, author, image }: props) => {
   return (
     <div className="max-w-fit grow overflow-hidden rounded-lg bg-white shadow-md">
       <img
-        className="aspect-auto min-h-[230px] w-full min-w-[430px] object-cover"
+        className="aspect-auto min-h-[14rem] w-full min-w-[27rem] object-cover"
         src={image}
         alt={image}
       />

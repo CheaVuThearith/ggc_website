@@ -93,11 +93,11 @@ const RecyclingFacilitiesCardExpanded = ({
               className="flex flex-col gap-y-2"
             >
               <p className="flex flex-row items-center gap-x-2 text-lg font-bold">
-                <FaMapMarkerAlt />
+                <FaMapMarkerAlt className="size-4" />
                 Location:<span className="font-normal">{location}</span>
               </p>
               <p className="flex flex-row items-center gap-x-2 text-lg font-bold">
-                <ClockIcon className="size-[18px]" />
+                <ClockIcon className="size-4" />
                 Work Hours:{" "}
                 <span className="font-normal">
                   {new Date(startHour).toLocaleTimeString([], {
@@ -112,7 +112,7 @@ const RecyclingFacilitiesCardExpanded = ({
                 </span>
               </p>
               <p className="flex flex-row items-center gap-x-2 text-lg font-bold">
-                <FaRecycle className="shrink-0"/>
+                <FaRecycle className="shrink-0 size-4"/>
                 Waste:
                 <span className="font-normal line-clamp-1">
                   {typesOfWaste
@@ -123,12 +123,12 @@ const RecyclingFacilitiesCardExpanded = ({
                 </span>
               </p>
               <p className="flex flex-row items-center gap-x-2 text-lg font-bold">
-                <PhoneIcon className="size-[18px]" />
+                <PhoneIcon className="size-4" />
                 Phone Number:{" "}
                 <span className="font-normal">{contact.phone}</span>
               </p>
               <p className="flex flex-row items-center gap-x-2 text-lg font-bold">
-                <EnvelopeIcon className="size-[18px]" />
+                <EnvelopeIcon className="size-4" />
                 Email: <span className="font-normal">{contact.email}</span>
               </p>
             </motion.div>

@@ -18,7 +18,7 @@ const BlogLoading = () => {
         <div className="flex flex-col-reverse justify-between gap-16 xl:flex-row">
           {/* blog posts */}
           {/* <FacilitiesContainer data={data} /> */}
-          <div className="flex min-h-[520px] max-w-5xl shrink-0 grow flex-row flex-wrap items-stretch justify-center gap-12">
+          <div className="flex min-h-[32.5rem] max-w-5xl shrink-0 grow flex-row flex-wrap items-stretch justify-center gap-12">
             <RecyclingFacilitiesCardLoading />
             <RecyclingFacilitiesCardLoading />
             <RecyclingFacilitiesCardLoading />

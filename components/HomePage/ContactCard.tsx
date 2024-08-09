@@ -3,7 +3,7 @@ import React from "react";
 
 const ContactCard = () => {
   return (
-    <div className="border-primaryLight flex max-h-fit max-w-fit flex-col items-center justify-between gap-x-12 gap-y-12 rounded-lg border-0 p-0 xl:flex-row xl:border-[56px] xl:p-20">
+    <div className="border-primaryLight flex max-h-fit max-w-fit flex-col items-center justify-between gap-x-12 gap-y-12 rounded-lg border-0 p-0 xl:flex-row xl:border-[3.5rem] xl:p-20">
       <Image
         src="/assets/icons/ggc_full.svg"
         width={350}

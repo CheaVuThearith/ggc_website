@@ -43,7 +43,7 @@ const RecyclingFacilitiesCard = ({
           {openStatus ? "Open Now!" : "Closed!"}
         </span>
 
-        <div className="flex flex-col gap-x-6 max-w-[350px] gap-y-3">
+        <div className="flex max-w-[22rem] flex-col gap-x-6 gap-y-3">
           {/* img */}
           <motion.div layoutId={layoutId + "image"} layout="position">
             <Image
@@ -53,8 +53,8 @@ const RecyclingFacilitiesCard = ({
               width={350}
               style={{
                 objectFit: "cover",
-                maxWidth: "350px",
-                maxHeight: "300px",
+                maxWidth: "22rem",
+                maxHeight: "18.75rem",
               }}
               className="rounded-md object-cover"
             />
@@ -76,11 +76,11 @@ const RecyclingFacilitiesCard = ({
               className="flex flex-col gap-y-2"
             >
               <div className="flex items-center gap-x-2 text-gray-600">
-                <FaMapMarkerAlt className="" />
+                <FaMapMarkerAlt className="size-4 shrink-0" />
                 <p>{location}</p>
               </div>
               <div className="flex items-center gap-x-2 text-gray-600">
-                <FaClock className="" />
+                <FaClock className="size-4 shrink-0" />
                 <p>
                   {startHourDate.toLocaleTimeString([], {
                     hour: "2-digit",
@@ -94,7 +94,7 @@ const RecyclingFacilitiesCard = ({
                 </p>
               </div>
               <div className="flex items-center gap-x-2 text-gray-600">
-                <FaRecycle className="" />
+                <FaRecycle className="size-4 shrink-0" />
                 <p>
                   {typesOfWaste
                     .map(
