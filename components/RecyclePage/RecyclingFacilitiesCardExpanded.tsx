@@ -1,8 +1,14 @@
-import { ClockIcon, EnvelopeIcon, PhoneIcon, XMarkIcon } from "@heroicons/react/16/solid";
+import {
+  ClockIcon,
+  EnvelopeIcon,
+  PhoneIcon,
+  XMarkIcon,
+} from "@heroicons/react/16/solid";
 import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 import React from "react";
-import { FaMapMarkerAlt, FaRecycle } from "react-icons/fa";
+import { FaFacebookSquare, FaMapMarkerAlt, FaRecycle } from "react-icons/fa";
+import { RiInstagramFill } from "react-icons/ri";
 
 type Props = {
   iframe: string;
@@ -44,21 +50,22 @@ const RecyclingFacilitiesCardExpanded = ({
       >
         <div onClick={onClick} className="fixed inset-0"></div>
 
-{/* card */}
+        {/* card */}
         <motion.div
           layoutId={layoutId}
-          className="z-10 flex max-w-full xl:flex-nowrap flex-wrap items-center relative justify-center xl:justify-between gap-x-24 gap-y-8 rounded-lg bg-white p-4 py-8 mx-4 shadow-lg xl:max-w-screen-2xl xl:px-24 xl:py-16"
+          className="relative z-10 mx-4 flex max-w-full flex-wrap items-center justify-center gap-x-24 gap-y-8 rounded-lg bg-white p-4 py-8 shadow-lg xl:max-w-screen-2xl xl:flex-nowrap xl:justify-between xl:px-24 xl:py-16"
         >
-        <XMarkIcon 
-        onClick={onClick}
-        className="cursor-pointer absolute right-4 top-4 size-8"/>
+          <XMarkIcon
+            onClick={onClick}
+            className="absolute right-4 fill-gray-700 hover:fill-black top-4 size-8 cursor-pointer"
+          />
           {/* map */}
           <motion.iframe
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5 }}
             src={iframe}
-            className="xl:shrink-0 rounded-lg"
+            className="rounded-lg xl:shrink-0"
             width={500}
             height={425}
           />
@@ -75,7 +82,7 @@ const RecyclingFacilitiesCardExpanded = ({
                   alt={image}
                 />
               </motion.div>
-              <div className="grow flex justify-center flex-col">
+              <div className="flex grow flex-col justify-center">
                 <motion.h2
                   layoutId={layoutId + "title"}
                   layout="position"
@@ -83,7 +90,9 @@ const RecyclingFacilitiesCardExpanded = ({
                 >
                   {title}
                 </motion.h2>
-                <p className='overflow-hidden line-clamp-2 xl:line-clamp-3'>{description}</p>
+                <p className="line-clamp-2 overflow-hidden xl:line-clamp-3">
+                  {description}
+                </p>
               </div>
             </div>
             {/* extra info */}
@@ -112,9 +121,9 @@ const RecyclingFacilitiesCardExpanded = ({
                 </span>
               </p>
               <p className="flex flex-row items-center gap-x-2 text-lg font-bold">
-                <FaRecycle className="shrink-0 size-4"/>
+                <FaRecycle className="size-4 shrink-0" />
                 Waste:
-                <span className="font-normal line-clamp-1">
+                <span className="line-clamp-1 font-normal">
                   {typesOfWaste
                     .map(
                       (waste) => waste.charAt(0).toUpperCase() + waste.slice(1)
@@ -133,23 +142,12 @@ const RecyclingFacilitiesCardExpanded = ({
               </p>
             </motion.div>
             {/* links */}
-            <div className="flex flex-row justify-end gap-x-4">
-              <a href={links.facebook}>
-                <Image
-                  src="/assets/icons/Instagram.png"
-                  alt="Instagram"
-                  width={40}
-                  height={40}
-                />
-              </a>
+            <div className="flex flex-row items-center justify-end gap-x-4">
               <a href={links.instagram}>
-                <Image
-                  width={40}
-                  height={40}
-                  src="/assets/icons/Facebook.png"
-                  alt="Facebook"
-                  className="h-10"
-                />
+                <FaFacebookSquare className="size-10 rounded-xl fill-gray-700 hover:fill-black" />
+              </a>
+              <a href={links.facebook}>
+                <RiInstagramFill className="size-[2.8em] fill-gray-700 hover:fill-black" />
               </a>
             </div>
           </div>
