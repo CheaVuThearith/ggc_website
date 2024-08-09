@@ -57,7 +57,7 @@ const RecyclingFacilitiesCardExpanded = ({
         >
           <XMarkIcon
             onClick={onClick}
-            className="absolute right-4 fill-gray-700 hover:fill-black top-4 size-8 cursor-pointer"
+            className="absolute right-4 top-4 size-8 cursor-pointer fill-gray-700 hover:fill-black"
           />
           {/* map */}
           <motion.iframe
@@ -143,10 +143,10 @@ const RecyclingFacilitiesCardExpanded = ({
             </motion.div>
             {/* links */}
             <div className="flex flex-row items-center justify-end gap-x-4">
-              <a href={links.instagram}>
+              <a href={links.facebook}>
                 <FaFacebookSquare className="size-10 rounded-xl fill-gray-700 hover:fill-black" />
               </a>
-              <a href={links.facebook}>
+              <a href={links.instagram}>
                 <RiInstagramFill className="size-[2.8em] fill-gray-700 hover:fill-black" />
               </a>
             </div>

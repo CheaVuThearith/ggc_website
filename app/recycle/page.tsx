@@ -26,12 +26,12 @@ const RecyclePage = async ({ searchParams }: Props) => {
       <section className="-mt-10 flex flex-col gap-y-12">
         {/* <GreenPost title="" subtitle="" image="" /> */}
         {/* bottom section */}
-        <div className="flex flex-col-reverse justify-between gap-16 xl:flex-row">
+        <div className="flex flex-col-reverse relative justify-between gap-16 xl:flex-row">
           {/* blog posts */}
           <FacilitiesContainer data={data} />
           <SearchBar
             searchOptions={["Paper", "Plastic", "Foam", "Aluminium", "Steel"]}
-          />
+            />
         </div>
       </section>
       <Pagination pagination={data.pagination} />
