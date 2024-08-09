@@ -53,7 +53,7 @@ const RecyclingFacilitiesCardExpanded = ({
         {/* card */}
         <motion.div
           layoutId={layoutId}
-          className="relative z-10 max-h-svh mx-4 flex max-w-full flex-wrap items-center justify-center gap-x-24 gap-y-8 rounded-lg bg-white p-4 py-8 shadow-lg xl:max-w-screen-2xl xl:flex-nowrap xl:justify-between xl:px-24 xl:py-16"
+          className="relative z-10 mx-4 flex max-h-svh max-w-full flex-wrap items-center justify-center overflow-y-scroll gap-x-24 gap-y-8 rounded-lg bg-white p-4 py-8 shadow-lg xl:max-w-screen-2xl xl:flex-nowrap xl:justify-between xl:px-24 xl:py-16"
         >
           <XMarkIcon
             onClick={onClick}
