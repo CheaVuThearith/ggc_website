@@ -1,4 +1,5 @@
 "use client";
+import GGC from "@/public/assets/icons/Ggc";
 import { Bars3Icon } from "@heroicons/react/16/solid";
 import { AnimatePresence, LayoutGroup, motion } from "framer-motion";
 import { usePathname } from "next/navigation";
@@ -32,12 +33,7 @@ function Navbar() {
             <div className="flex w-full flex-row items-center gap-x-3 xl:w-auto">
               {/* logo */}
               <a href="/">
-                <motion.img
-                  layout="position"
-                  src="/assets/icons/ggc.svg"
-                  alt="ggc_logo"
-                  className="h-16 w-24"
-                />
+                <GGC className="h-16 w-24" fill="#2BAE7A"></GGC>
               </a>
               <AnimatePresence mode="popLayout">
                 {/* slogan and name */}

@@ -1,4 +1,5 @@
 // components/Footer.tsx
+import GGC from "@/public/assets/icons/Ggc";
 import Image from "next/image";
 import React from "react";
 import { FaFacebookSquare } from "react-icons/fa";
@@ -11,13 +12,7 @@ const Footer: React.FC = () => {
         <div className="flex items-center justify-between">
           {/* ggc */}
           <div className="flex shrink-0 items-center">
-            <Image
-              src="/assets/icons/Logo.png"
-              alt="Green Growth Cycle Logo"
-              height={56}
-              width={56}
-              className="h-14"
-            />
+            <GGC className="aspect-auto h-12" fill="#000" />
           </div>
           <span className="text-gray-500">© 2024 GGC</span>
           {/* socials */}
