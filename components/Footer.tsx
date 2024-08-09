@@ -1,4 +1,5 @@
 // components/Footer.tsx
+import Image from "next/image";
 import React from "react";
 import { FaFacebookSquare } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
@@ -10,9 +11,11 @@ const Footer: React.FC = () => {
         <div className="flex items-center justify-between">
           {/* ggc */}
           <div className="flex shrink-0 items-center">
-            <img
+            <Image
               src="/assets/icons/Logo.png"
               alt="Green Growth Cycle Logo"
+              height={56}
+              width={56}
               className="h-14"
             />
           </div>

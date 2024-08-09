@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 type props = {
@@ -9,7 +10,9 @@ type props = {
 const BlogPost = ({ title, description, author, image }: props) => {
   return (
     <div className="max-w-fit grow overflow-hidden rounded-lg bg-white shadow-md">
-      <img
+      <Image
+        width={432}
+        height={224}
         className="aspect-auto min-h-[14rem] w-full min-w-[27rem] object-cover"
         src={image}
         alt={image}

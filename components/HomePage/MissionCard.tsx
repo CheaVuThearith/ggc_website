@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 type props = {
   title: string;
   subtitle: string;
@@ -13,10 +15,12 @@ const MissionCard = ({ title, subtitle, icon, imgClass }: props) => {
           className="flex size-28 items-center justify-center rounded-full bg-white"
           style={{ boxShadow: "0px 1px 7px -3px #20B07C" }}
         >
-          <img
+          <Image
             src={icon}
             alt={icon}
-            className={`object-contain ${imgClass}`}
+            width={100}
+            height={100}
+            className={`overflow-hidden object-contain ${imgClass}`}
           />
         </div>
         {/* title */}
