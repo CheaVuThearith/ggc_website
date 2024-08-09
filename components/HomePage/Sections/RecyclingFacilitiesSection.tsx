@@ -2,8 +2,6 @@ import React from "react";
 import Section from "../../Section";
 import RecyclingCard from "../RecyclingCard";
 
-type Props = {};
-
 const showcase = [
   {
     title: "ECO BUSINESS CAMBODIA",
@@ -22,7 +20,7 @@ const showcase = [
   },
 ];
 
-const RecyclingFacilitiesSection = (props: Props) => {
+const RecyclingFacilitiesSection = () => {
   return (
     <Section title="Recycling Facilities">
       <div className="flex flex-col items-center justify-center gap-x-8 gap-y-12 xl:flex-row xl:items-stretch">

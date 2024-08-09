@@ -1,8 +1,6 @@
 import React from "react";
 import Section from "../../Section";
 import BlogCard from "../BlogCard";
-type Props = {};
-
 const blogs = [
   {
     title: "Waste Management Tips to Use at Home",
@@ -24,7 +22,7 @@ const blogs = [
   },
 ];
 
-const BlogSection = (props: Props) => {
+const BlogSection = () => {
   return (
     <Section title="Our Blogs">
       <div className="flex flex-col items-center justify-center gap-x-8 gap-y-12 xl:flex-row xl:items-stretch">

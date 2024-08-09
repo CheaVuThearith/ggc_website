@@ -2,9 +2,7 @@ import React from "react";
 import Section from "../../Section";
 import ContactCard from "../ContactCard";
 
-type Props = {};
-
-const ContactSection = (props: Props) => {
+const ContactSection = () => {
   return (
     <Section title="Contact Us">
       <div className="flex items-center justify-center">

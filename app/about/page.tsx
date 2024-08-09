@@ -4,9 +4,7 @@ import MissionSection from "@/components/HomePage/Sections/MissionSection";
 import Image from "next/image";
 import Footer from "@/components/Footer";
 
-type Props = {};
-
-const page = (props: Props) => {
+const page = () => {
   return (
     <>
       <Section title="About Us">

@@ -1,9 +1,7 @@
 import Image from "next/image";
 import React from "react";
 
-type Props = {};
-
-const HeroSection = (props: Props) => {
+const HeroSection = () => {
   return (
     <section className="flex flex-row items-center justify-center xl:justify-between">
       {/* left side */}
@@ -27,7 +25,10 @@ const HeroSection = (props: Props) => {
             Browse our blog to learn more about the environment or take a look
             at some recycling facilities and start taking action!
           </p>
-          <a href="/blog" className="bg-primary max-w-fit rounded-md px-12 py-3 font-bold text-white">
+          <a
+            href="/blog"
+            className="bg-primary max-w-fit rounded-md px-12 py-3 font-bold text-white"
+          >
             Learn More
           </a>
         </div>

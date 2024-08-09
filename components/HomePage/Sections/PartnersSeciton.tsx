@@ -2,9 +2,7 @@ import React from "react";
 import Section from "../../Section";
 import PartnersCard from "../PartnersCard";
 
-type Props = {};
-
-const PartnersSeciton = (props: Props) => {
+const PartnersSeciton = () => {
   return (
     <Section title="Our Partners">
       <div className="flex flex-wrap items-center justify-center">

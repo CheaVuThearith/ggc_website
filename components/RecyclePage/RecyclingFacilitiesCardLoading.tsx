@@ -1,9 +1,7 @@
 import React from "react";
 import { FaMapMarkerAlt } from "react-icons/fa";
 
-type Props = {};
-
-const RecyclingFacilitiesCardLoading = (props: Props) => {
+const RecyclingFacilitiesCardLoading = () => {
   return (
     <div className="relative max-w-fit rounded-lg border bg-white p-6 shadow-md">
       <div className="flex max-w-[350px] flex-col gap-x-6 gap-y-3">

@@ -1,11 +1,9 @@
 import Image from "next/image";
 import React from "react";
 
-type Props = {};
-
-const ContactCard = (props: Props) => {
+const ContactCard = () => {
   return (
-    <div className="border-primaryLight flex max-h-fit max-w-fit gap-y-12 xl:flex-row flex-col items-center justify-between gap-x-12 rounded-lg border-0 xl:border-[56px] p-0 xl:p-20">
+    <div className="border-primaryLight flex max-h-fit max-w-fit flex-col items-center justify-between gap-x-12 gap-y-12 rounded-lg border-0 p-0 xl:flex-row xl:border-[56px] xl:p-20">
       <Image
         src="/assets/icons/ggc_full.svg"
         width={350}
@@ -21,8 +19,7 @@ const ContactCard = (props: Props) => {
         <div className="flex flex-col items-center justify-center gap-y-5">
           <p className="text-center">
             Join Our Newsletter for Eco-Tips, Exclusive Offers, and
-            Sustainability Stories Delivered to Your mail. No spam we promise
-            :p
+            Sustainability Stories Delivered to Your mail. No spam we promise :p
           </p>
 
           {/* email input */}

@@ -2,37 +2,35 @@ import React from "react";
 import Section from "../../Section";
 import MissionCard from "../MissionCard";
 
-type Props = {};
-
 const missions = [
   {
     title: "Discover Recycling Facilities",
     subtitle: "Explore Local Recycling Centers and Sustainable Practices",
     icon: "/assets/icons/recycle_location.png",
-    className:"size-20 "
+    className: "size-20 ",
   },
   {
     title: "Commitment to Sustainability",
     subtitle: "Promoting recycling and sustainability for a greener future",
     icon: "/assets/icons/earth_eco.png",
-    className:"size-24 "
+    className: "size-24 ",
   },
   {
     title: "Awareness",
     subtitle: "Join our eco-community for tips on eco-friendly living",
     icon: "/assets/icons/earth_leaf.png",
-    className:"size-20 "
+    className: "size-20 ",
   },
   {
     title: "Small Action",
     subtitle:
       "Every action counts. Explore our environmental impact initiatives",
-      icon: "/assets/icons/eco_awareness.png",
-      className:"size-20 "
-    },
+    icon: "/assets/icons/eco_awareness.png",
+    className: "size-20 ",
+  },
 ];
 
-const MissionSection = (props: Props) => {
+const MissionSection = () => {
   return (
     <Section title="Our Mission">
       <div className="flex flex-wrap items-stretch justify-center gap-x-4 gap-y-12">
