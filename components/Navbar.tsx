@@ -45,7 +45,9 @@ function Navbar() {
                   className="flex-col gap-y-2 xl:flex"
                 >
                   <h1 className="font-accent text-3xl">
-                    <span className="text-primary">Green</span> Growth Cycle
+                    <span className="text-primary hidden xl:block">Green</span>{" "}
+                    Growth Cycle
+                    <span className="block xl:hidden">GGC</span>
                   </h1>
                   {windowWidth > 1280 && (
                     <p className="font-primary text-xl">
