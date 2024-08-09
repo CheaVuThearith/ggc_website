@@ -1,5 +1,5 @@
 "use client";
-import GGC from "@/public/assets/icons/Ggc";
+import GGC from "@/public/assets/icons/GGC";
 import { Bars3Icon } from "@heroicons/react/16/solid";
 import { AnimatePresence, LayoutGroup, motion } from "framer-motion";
 import { usePathname } from "next/navigation";

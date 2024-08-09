@@ -1,5 +1,5 @@
 // components/Footer.tsx
-import GGC from "@/public/assets/icons/Ggc";
+import GGC from "@/public/assets/icons/GGC";
 import Image from "next/image";
 import React from "react";
 import { FaFacebookSquare } from "react-icons/fa";
