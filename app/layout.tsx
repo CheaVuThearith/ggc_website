@@ -22,10 +22,12 @@ export default function RootLayout({
       lang="en"
       className="font-primary flex flex-col items-center justify-center"
     >
-      <body className={`${inter.className} size-full`}>
+      <body
+        className={`${inter.className} flex flex-col items-center size-full`}
+      >
         <Navbar />
         <section
-          className={`my-14 flex max-w-screen-2xl flex-col gap-y-20 px-8 size-full`}
+          className={`my-14 flex size-full max-w-screen-2xl flex-col gap-y-20 px-8`}
         >
           {children}
           <Footer />

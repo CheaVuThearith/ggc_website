@@ -26,7 +26,7 @@ function Navbar() {
         {/* inner nav */}
         <motion.nav
           layout
-          className="sticky top-0 z-20 flex w-full flex-col items-center justify-center gap-y-5 bg-white px-4 py-4 xl:flex-row xl:justify-between"
+          className="sticky size-full max-w-screen-2xl top-0 z-20 flex w-full flex-col items-center justify-center gap-y-5 bg-white px-4 py-4 xl:flex-row xl:justify-between"
         >
           {/* left side */}
           <div className="flex w-full items-center justify-between gap-x-3 xl:w-auto xl:justify-normal">
