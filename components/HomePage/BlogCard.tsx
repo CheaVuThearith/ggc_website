@@ -5,7 +5,7 @@ const BlogCard = ({ title, subtitle, image }: props) => {
   return (
     <div className="border-primary flex max-w-96 flex-col gap-y-4 rounded-xl border bg-white p-6">
       <Image
-        src={image}
+        src={`${image}`}
         className="rounded-lg"
         width={350}
         height={200}

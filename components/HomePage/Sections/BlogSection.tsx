@@ -31,7 +31,7 @@ const BlogSection = () => {
             key={index}
             title={blog.title}
             subtitle={blog.subtitle}
-            image={blog.image}
+            image={`${blog.image}`}
           />
         ))}
       </div>

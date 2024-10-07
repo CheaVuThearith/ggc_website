@@ -26,14 +26,14 @@ function Navbar() {
         {/* inner nav */}
         <motion.nav
           layout
-          className="sticky top-0 z-20 flex w-full flex-col items-center justify-center gap-y-5 bg-white py-2 xl:flex-row xl:justify-between"
+          className="sticky top-0 z-20 flex w-full flex-col items-center justify-center gap-y-5 bg-white px-4 py-4 xl:flex-row xl:justify-between"
         >
           {/* left side */}
           <div className="flex w-full items-center justify-between gap-x-3 xl:w-auto xl:justify-normal">
-            <div className="flex w-full flex-row items-center gap-x-3 xl:w-auto">
+            <div className="flex grow flex-row items-center gap-x-6 xl:w-auto">
               {/* logo */}
               <a href="/">
-                <GGC className="h-16 w-24" fill="#2BAE7A"></GGC>
+                <GGC className="h-8 w-fit" fill="#2BAE7A"></GGC>
               </a>
               <AnimatePresence mode="popLayout">
                 {/* slogan and name */}

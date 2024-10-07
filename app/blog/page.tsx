@@ -38,7 +38,7 @@ const RecyclePage = async ({ searchParams }: Props) => {
                   description={post.content}
                   title={post.title}
                   author={post.author}
-                  image={post.image}
+                  image={`/${post.image}`}
                 />
               ))}
             </div>

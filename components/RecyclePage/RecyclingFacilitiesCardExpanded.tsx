@@ -53,11 +53,11 @@ const RecyclingFacilitiesCardExpanded = ({
         {/* card */}
         <motion.div
           layoutId={layoutId}
-          className="relative z-10 mx-4 flex max-h-svh max-w-full flex-wrap items-center justify-center overflow-y-scroll gap-x-24 gap-y-8 rounded-lg bg-white p-4 py-8 shadow-lg xl:max-w-screen-2xl xl:flex-nowrap xl:justify-between xl:px-24 xl:py-16"
+          className="relative z-10 mx-4 flex max-h-svh max-w-full flex-wrap items-center justify-center gap-x-24 gap-y-8 overflow-y-scroll rounded-lg bg-white p-4 py-8 shadow-lg xl:max-w-screen-2xl xl:flex-nowrap xl:justify-between xl:px-24 xl:py-16"
         >
           <XMarkIcon
             onClick={onClick}
-            className="absolute right-4 top-4 size-8 cursor-pointer fill-gray-700 hover:fill-black"
+            className="fixed right-6 top-4 size-8 bg-white rounded-md cursor-pointer fill-gray-700 hover:fill-black"
           />
           {/* map */}
           <motion.iframe
@@ -126,7 +126,7 @@ const RecyclingFacilitiesCardExpanded = ({
                 <span className="line-clamp-1 font-normal">
                   {typesOfWaste
                     .map(
-                      (waste) => waste.charAt(0).toUpperCase() + waste.slice(1)
+                      (waste) => waste.charAt(0).toUpperCase() + waste.slice(1),
                     )
                     .join(", ")}
                 </span>
